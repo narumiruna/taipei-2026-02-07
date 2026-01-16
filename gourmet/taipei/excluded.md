@@ -91,6 +91,23 @@
 
 ---
 
+## 已歇業（Permanently Closed）
+
+### N°168 PRIME 敦化館（牛排）
+- **排除日期**: 2026-01-16
+- **排除理由**: 敦化館已結束營業，無法預約
+- **Google Maps**: https://www.google.com/maps/search/?api=1&query=N168+PRIME+敦化館+台北
+- **來源**:
+  - inline 訂位系統: https://inline.app/booking/-Ll064OePG1xhEvb5tu0:inline-live-1
+  - 平心而論部落格: https://whitneyblog.com/n168prime-dunhua/
+- **備註**:
+  - 原為米其林指南推薦餐廳
+  - 原有4間包廂，最大可容納50人
+  - **替代方案**: N°168 PRIME 大直本館（維多麗亞酒店）仍持續營業
+  - 大直本館電話：02-8502-0000
+
+---
+
 ## 尚未再研究的店家（Not Researched Further）
 
 以下店家已列入候選清單，但因已有足夠高分選項，未進行深入調查：

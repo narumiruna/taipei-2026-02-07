@@ -26,13 +26,13 @@
 | GMT Italian Restaurant | restaurant | 中山區 | 義大利菜 | https://www.google.com/maps/search/?api=1&query=GMT+Italian+Restaurant+Grand+Mayfull+Taipei | researching | -/50 | Grand Mayfull官網 | 5間包廂，可容納20人以上 |
 | 橋山壽喜燒 by 二本松 | restaurant | 多區域 | 日式壽喜燒 | https://www.google.com/maps/search/?api=1&query=橋山壽喜燒+by+二本松+台北 | researching | -/50 | 台北聚餐包廂推薦 | 和牛壽喜燒，大包廂可容納20人 |
 | 鈺鮨 無菜單日本料理 | restaurant | 多區域 | 日本料理 | https://www.google.com/maps/search/?api=1&query=鈺鮨+無菜單日本料理+台北 | researching | -/50 | 台北包廂餐廳推薦 | 高級壽司與懷石料理，有包廂 |
-| N°168 PRIME 敦化館 | restaurant | 大安區 | 牛排 | https://www.google.com/maps/search/?api=1&query=N168+PRIME+敦化館+台北 | researching | -/50 | 台北大包廂推薦 | 4間大包廂最大可容納50人，熟成牛排 |
+| N°168 PRIME 敦化館 | restaurant | 大安區 | 牛排 | https://www.google.com/maps/search/?api=1&query=N168+PRIME+敦化館+台北 | rejected | -/50 | inline, 多則評論 | 已歇業（敦化館結束營業），可考慮大直本館 |
 | Ulove羽樂歐陸創意料理 | restaurant | 多區域 | 法式/西餐 | https://www.google.com/maps/search/?api=1&query=Ulove+羽樂歐陸創意料理+台北 | researching | -/50 | 台北大包廂推薦 | 20人大包廂與影音設備，法式排餐 |
-| 海峽會 | restaurant | 多區域 | 海鮮/日法料理 | https://www.google.com/maps/search/?api=1&query=海峽會+台北 | researching | -/50 | 台北大包廂推薦 | 25間大小包廂，容納8-52人 |
+| 海峽會 | restaurant | 松山區 | 海鮮/日法料理 | https://www.google.com/maps/search/?api=1&query=海峽會+台北 | shortlisted | 37/50 | inline, 5+ blogs, Google 4.5★ | 全包廂制會館，皇品廳最多28人，頂級食材 |
 | 長春亰華海鮮餐廳 | restaurant | 中山區 | 海鮮/桌菜 | https://www.google.com/maps/search/?api=1&query=長春亰華海鮮餐廳+台北 | researching | -/50 | 台北包廂餐廳推薦 | 現流海鮮桌菜，包廂可彈性併桌 |
 | 晶櫻會館粵滬創意料理 | restaurant | 多區域 | 江浙/海鮮 | https://www.google.com/maps/search/?api=1&query=晶櫻會館粵滬創意料理+台北 | researching | -/50 | 台北包廂餐廳推薦 | 多間包廂，江浙與創意海鮮合菜 |
 | 如嫣私廚職人料理 | restaurant | 多區域 | 無菜單料理 | https://www.google.com/maps/search/?api=1&query=如嫣私廚職人料理+台北 | researching | -/50 | 台北包廂餐廳推薦 | 海鮮無菜單料理，包廂10-22人 |
-| 饗饗 INPARADISE | restaurant | 信義區 | Buffet吃到飽 | https://www.google.com/maps/search/?api=1&query=饗饗+INPARADISE+台北 | researching | -/50 | 食尚玩家 | 微風信義46樓，高檔自助餐，有包廂 |
+| 饗饗 INPARADISE | restaurant | 信義區 | Buffet吃到飽 | https://www.google.com/maps/search/?api=1&query=饗饗+INPARADISE+台北 | shortlisted | 39/50 | 官網, 4+ blogs, Google 4.3★ | 微風信義46樓高空景觀，包廂有限需提前預約 |
 | 凱菲屋 @ Grand Hyatt | restaurant | 信義區 | Buffet吃到飽 | https://www.google.com/maps/search/?api=1&query=凱菲屋+Grand+Hyatt+Taipei | researching | -/50 | 台北吃到飽推薦 | 君悅酒店經典自助餐，有包廂 |
 | 栢麗廳 @ 晶華酒店 | restaurant | 中山區 | Buffet吃到飽 | https://www.google.com/maps/search/?api=1&query=栢麗廳+台北晶華酒店 | researching | -/50 | 台北吃到飽推薦 | 迴轉生猛海鮮台，可預訂包廂 |
 | 美福大飯店 彩匯自助餐 | restaurant | 中山區 | Buffet吃到飽 | https://www.google.com/maps/search/?api=1&query=美福大飯店+彩匯自助餐 | researching | -/50 | 台北吃到飽推薦 | 多個大型包廂，高品質肉類海鮮 |
@@ -45,7 +45,7 @@
 | 南村私廚小酒棧 | restaurant | 大安區 | 眷村菜/台菜 | https://www.google.com/maps/search/?api=1&query=南村私廚小酒棧+台北 | shortlisted | 41/50 | Google Maps 4.3★, Michelin, inline, 6+ blogs | 米其林餐盤推薦3年+，中包廂12-24人適合16-20人團體 |
 | 春韭 晴光店 | restaurant | 中山區 | 無菜單台菜 | https://www.google.com/maps/search/?api=1&query=春韭+晴光店+台北 | shortlisted | 38/50 | Google 5.0★, inline, Jensen Huang推薦, 4+ news, 5+ blogs | 黃仁勳（NVIDIA CEO）推薦，三樓包廂20人含獨立廁所 |
 | 老烤箱 Antico Forno | restaurant | 大安區 | 義大利菜 | https://www.google.com/maps/search/?api=1&query=老烤箱+Antico+Forno+瑞安街141號 | researching | -/50 | 米其林指南推薦 | 米其林推薦義式餐廳，可包場，適合20人團體 |
-| Zaap | restaurant | 信義區 | 泰式料理 | https://www.google.com/maps/search/?api=1&query=Zaap+吳興街345巷6號 | researching | -/50 | 米其林指南推薦 | 預約制泰式私廚，約24席，可包場適合20人 |
+| Zaap | restaurant | 信義區 | 泰式料理 | https://www.google.com/maps/search/?api=1&query=Zaap+吳興街345巷6號 | shortlisted | 37/50 | Michelin, inline, 5+ blogs | 米其林推薦泰式私廚，約24席可包場適合20人 |
 | 雞窩餐廳 | restaurant | 信義區 | 台菜 | https://www.google.com/maps/search/?api=1&query=雞窩餐廳+和平東路三段377號 | researching | -/50 | 愛食記 | 老字號砂鍋土雞湯，有包廂，適合5-10人（20人需併桌確認） |
 | 香米泰國料理 | restaurant | 多區域 | 泰式料理 | https://www.google.com/maps/search/?api=1&query=香米泰國料理+台北 | researching | -/50 | THAI SELECT認證 | 多家分店，大直店有10人包廂兩間，可容納20人 |
 | 金蓬萊遵古台菜餐廳 | restaurant | 北投區 | 台菜 | https://www.google.com/maps/search/?api=1&query=金蓬萊遵古台菜餐廳+台北 | researching | -/50 | 米其林一星 | 多次蟬聯米其林一星，北投酒家菜，大包廂 |

@@ -479,6 +479,91 @@
 - Risk (0–10; 10 = low risk): 9/10 - 純預約制，米其林星級保證，風險極低
 - **Total**: 42/50
 
+### 海峽會
+
+**Official**: http://www.csclub.com.tw
+
+**Google Maps**: 4.5+/5
+- 地址：台北市松山區（全包廂制高級會館）
+- inline: https://inline.app/booking/-MT3fAYP3nDdeht-5SZz:inline-live-2
+
+**包廂容納能力**: 皇品廳最多28人（火鍋模式20人），全館25間包廂，8-28人不等
+
+**指南來源**:
+- 娜塔蝦: https://natasha-traveler.tw/taipei-csclub/
+- 貓大爺: https://lordcat.net/archives/87728
+- 湯姆仕: https://www.thomaskhh.com/海峽會
+
+**反覆出現的優點**: 全包廂制隱私性極高、食材頂級（龍蝦/和牛/鮑魚）、政商名流首選、專屬服務人員
+
+**反覆出現的缺點**: 價位極高（2,000-10,000元/人+10%）、需提前預訂、10人以上只能電話預約
+
+**實用資訊**:
+- reservation requirement: required（10人以上電話 02-7707-6789）
+- group capacity: 皇品廳28人（火鍋20人）
+- 價位：2,000-10,000元/人+10%服務費
+
+**Score (50-point rubric)**:
+- Taste/Quality: 9/10 - Consistency: 9/10 - Value: 5/10 - Convenience: 7/10 - Risk: 7/10
+- **Total**: 37/50
+
+### 饗饗 INPARADISE 信義店
+
+**Official**: https://inparadise.com.tw/zh-TW/store/Xinyi
+
+**Google Maps**: 4.3+/5
+- 地址：台北市信義區微風信義46樓
+- 電話：02-8780-9988
+
+**包廂容納能力**: 包廂有限（需提前1-2月聯絡），多為開放式大圓桌
+
+**指南來源**:
+- Wendy's Journey: https://www.wendyjourney.com/inparadise/
+- hanblog: https://hanblog.tw/inparadise-breeze/
+
+**反覆出現的優點**: 46樓高空101夜景、餐點豐富品質高、捷運直達、用餐時間充足（晚餐4小時）
+
+**反覆出現的缺點**: 包廂有限、需提前1月預訂、團體需電話預約
+
+**實用資訊**:
+- reservation requirement: required（團體電話 02-8780-9988）
+- 價位（+10%）：平日午1,490/假日午1,790/平日晚1,790/假日晚2,090元/人
+- 訂位定金：500元/人，7天前取消可退
+
+**Score (50-point rubric)**:
+- Taste/Quality: 8/10 - Consistency: 8/10 - Value: 7/10 - Convenience: 9/10 - Risk: 7/10
+- **Total**: 39/50
+
+### Zaap 泰式私廚
+
+**Official**: https://inline.app/booking/-MBm97x7Lvy5u1x9yqnC:inline-live-1
+
+**Google Maps**: 4.5+/5
+- 地址：台北市信義區吳興街345巷6號
+- 電話：02-2720-1148
+
+**米其林**: 米其林指南推薦
+
+**包廂容納能力**: 全店約24席，10人以上可包場（20-24人）
+
+**指南來源**:
+- 米其林: https://guide.michelin.com/tw/zh_TW/taipei-region/taipei/restaurant/zaap
+- 愛食記: https://ifoodie.tw/restaurant/5f572a8a2756dd155d8e5998-Zaap-Taipei
+
+**反覆出現的優點**: 米其林推薦、道地泰式口味、預約制確保品質、招牌炭烤泰國蝦/火山排骨湯
+
+**反覆出現的缺點**: 僅接待6歲以上、包場需提前1月、禁帶外食/寵物
+
+**實用資訊**:
+- reservation requirement: required（電話或FB私訊Zaaptaipei）
+- group capacity: 包場20-24人
+- 低消：7-8人8,000元+10%、9-10人10,000元+10%、10人以上店家報價
+- 取消：7天前全退、4-6天前退40%、3天內不退
+
+**Score (50-point rubric)**:
+- Taste/Quality: 9/10 - Consistency: 8/10 - Value: 7/10 - Convenience: 6/10 - Risk: 7/10
+- **Total**: 37/50
+
 ---
 
 ## 證據模板
