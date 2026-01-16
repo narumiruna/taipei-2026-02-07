@@ -2,12 +2,11 @@
 
 ## Document Purpose
 
-This document defines the complete research methodology for evidence-based gourmet research across multiple cities. It serves as the single source of truth for both human researchers and AI agents.
+This document defines the complete research methodology for evidence-based restaurant research for this project. It serves as the single source of truth for both human researchers and AI agents.
 
 **Language Policy:**
-- Primary language: English (all operational procedures, rules, and guidelines)
-- Japanese: Used sparingly for clarification, context, or examples only
-- No content duplication across languages
+- Language requirements are defined in `CONSTITUTION.md` and must be followed.
+- This document does not restate those requirements.
 
 ---
 
@@ -15,15 +14,13 @@ This document defines the complete research methodology for evidence-based gourm
 
 ### In Scope
 
-**Primary Objective**: Build evidence-based food recommendations for a trip from `YYYY-MM-DD` to `YYYY-MM-DD`.
+**Primary Objective**: Build evidence-based restaurant recommendations for group dining (around 16–20 people) in Taipei City.
 
-**Target Cities** (調査対象エリア):
-- <都市> (City A)
+**Target City**:
+- Taipei City
 
 **Categories Covered**:
 - Restaurants (all cuisine types)
-- Cafes (coffee, tea, light meals)
-- Dessert shops (sweets, pastries, ice cream)
 
 **Research Deliverables**:
 - Scored candidate list with evidence
@@ -35,14 +32,14 @@ This document defines the complete research methodology for evidence-based gourm
 
 **Not Researched**:
 - Accommodations (already booked)
-- Transportation between cities (already booked)
 - Non-food activities or attractions
 - Shopping (unless food-related)
 - Nightlife (bars, clubs) unless food-focused
-- Cities outside the four target areas
+- Non-restaurant food venues (cafes, dessert shops)
+- Cities outside Taipei City
 
 **Fixed Constraints** (not modifiable by research):
-- Travel dates: <YYMM-DD> to <YYYY-MM-DD>
+- Group size: around 16–20 people
 - Previously visited restaurants (reference only):
   - <店舗名>（<都市名>）
 
@@ -134,7 +131,7 @@ This document defines the complete research methodology for evidence-based gourm
 **Primary function**: Final approval and strategic decisions
 
 **Responsibilities**:
-- Review completion status per city
+- Review completion status for Taipei
 - Approve or reject recommendations
 - Override automated decisions when justified
 - Provide strategic direction for research priorities
@@ -168,23 +165,17 @@ This document defines the complete research methodology for evidence-based gourm
 
 ### File Organization
 
-Each city under `gourmet/` directory contains exactly five files following the progressive disclosure principle:
+The project uses a single city directory under `gourmet/` with exactly five files following the progressive disclosure principle:
 
 ```
 gourmet/
-  [city]/
+  taipei/
     overview.md    - City context, strategy, research progress
     candidates.md  - All candidates in structured table format
     notes.md       - Detailed evidence and scoring rationale  
     excluded.md    - Rejected candidates with exclusion reasons
     top-places.md  - Final recommendations and dining strategy
 ```
-
-**City directories** (use romanized, de-identified names):
-- `city-a`
-- `city-b`
-- `city-c`
-- `city-d`
 
 ### File Purposes and Reading Sequence
 
@@ -193,8 +184,8 @@ gourmet/
 **Audience**: New researchers, project managers  
 **Reading time**: 5 minutes  
 **Contains**:
-- Travel dates and accommodation info
-- City-specific food highlights (e.g., a local noodle specialty, a regional wagyu beef)
+- Travel context and group constraints
+- Taipei-specific food highlights (e.g., a local noodle specialty)
 - Research strategy and priorities
 - Progress checklist (research completion tracking)
 - Important constraints (holidays, hours, transportation)
@@ -256,7 +247,7 @@ gourmet/
 
 **Traveler journey**:
 ```
-README.md → [select city] → top-places.md → Make reservations
+README.md → top-places.md → Make reservations
 ```
 
 **Quick research scan**:
@@ -331,7 +322,7 @@ The `templates/` directory contains markdown templates for all five required fil
 
 When starting research for a new city:
 1. Create new directory: `gourmet/[cityname]/`
-2. Copy all 5 templates from `templates/` to the new city directory
+2. Copy all 5 templates from `templates/` to `gourmet/taipei/`
 3. Start with `overview.md` to establish context and strategy
 4. Replace placeholder text (marked with `[brackets]`) with actual content
 5. Follow the six-stage research workflow (see below)
@@ -356,33 +347,33 @@ Stage 5: Synthesis     → Generate top-places.md
 Stage 6: Completion    → Verify and document completion
 ```
 
-### Stage 0: Initialize City Research
+### Stage 0: Initialize Research
 
 **Objective**: Establish research foundation and strategy
 
 **Actions**:
-1. Set up city directory structure:
-   - Create new directory: `gourmet/[cityname]/`
+1. Set up directory structure:
+   - Create directory: `gourmet/taipei/`
    - Copy templates from `templates/` directory (see <a>Template Files</a>)
    - This provides standardized starting structure for all five required files
 
 2. Create `overview.md` (using template as starting point):
-   - Travel dates and accommodation info
-   - City-specific food highlights (e.g., a local noodle specialty, a regional wagyu beef)
-   - Research priorities (cuisine types, special dishes)
+   - Group size constraints and dining context
+   - Taipei-specific food highlights (e.g., a local noodle specialty)
+   - Research priorities (cuisine types, group-friendly formats)
    - Progress checklist (initially empty)
-   - Known constraints (business hours, holidays, transportation)
+   - Known constraints (business hours, holidays, group capacity)
 
 3. Gather initial candidate pool using web_search:
    - "best [local specialty dish] restaurants [year]" (e.g., "best [local noodle specialty] restaurants 2026")
-   - "best [category] in [city]" (e.g., "best dessert cafes [City A]")
-   - "[specific dish] restaurants [city]" (e.g., "[local spiny lobster] restaurants [City A]")
+   - "best [category] in Taipei" (e.g., "best hot pot Taipei")
+   - "[specific dish] restaurants Taipei" (e.g., "[local specialty] restaurants Taipei")
    - Focus on recent guides (2024-2026) and local sources
 
 4. Batch similar searches (efficiency):
    - One search: main restaurants by cuisine type
    - One search: casual/local specialties
-   - One search: desserts/cafes
+   - One search: large-group dining or private-room options
 
 **Success criteria**:
 - City directory created with all template files
@@ -401,10 +392,10 @@ Stage 6: Completion    → Verify and document completion
 **Actions**:
 1. Use `candidates.md` template (already copied in Stage 0) with structured table
 2. Add all discovered candidates to table with required fields:
-   - `name`: Restaurant/cafe name (prefer original language)
-   - `category`: restaurant | cafe | dessert
+   - `name`: Restaurant name (prefer original language)
+   - `category`: restaurant
    - `area`: Neighborhood or district
-   - `type`: Cuisine or specialty (e.g., pasta, [local noodle specialty], gelato)
+   - `type`: Cuisine or specialty (e.g., hot pot, beef noodles)
    - `google_maps_url`: Google Maps link (search link acceptable initially)
    - `status`: inbox (all start here)
    - `score`: - (empty initially)
@@ -439,7 +430,7 @@ Stage 6: Completion    → Verify and document completion
 **Actions per candidate**:
 
 1. **Search pattern** (efficient):
-   - Single comprehensive query: "[Restaurant Name] [City] 食べログ 予約 口コミ"
+   - Single comprehensive query: "[Restaurant Name] Taipei 食べログ 予約 口コミ"
    - Often returns Google Maps, 食べログ, and Google口コミ together
    - Extract systematically: ratings, review counts, prices, hours, pros/cons
 
@@ -454,7 +445,7 @@ Stage 6: Completion    → Verify and document completion
    **食べログ (Tabelog)**: X.X/5 (Y reviews)
    - [URL]
    - 夜予算/昼予算: [price range]
-   - Area ranking: [e.g., "[City A] [cuisine] ranking #3"]
+   - Area ranking: [e.g., "Taipei [cuisine] ranking #3"]
    
    **Other ratings**: [Retty, Hot Pepper Gourmet, etc.]
    
@@ -626,10 +617,10 @@ Stage 6: Completion    → Verify and document completion
    - Note: This is NOT research completion tracking
 
 2. **Balance recommendations**:
-   - Target: 5-10 Top Picks per city
-   - Target: 3-5 Backups per city
-   - Ensure category balance (casual, special occasion, dessert)
-   - Ensure geographic spread across city
+   - Target: 5-10 Top Picks for Taipei
+   - Target: 3-5 Backups for Taipei
+   - Ensure variety across cuisines and dining formats (casual vs special occasion, private rooms)
+   - Ensure geographic spread across Taipei
 
 3. **Link requirements**:
    - Google Maps: Valid URL (direct link or search link)
@@ -662,10 +653,10 @@ Stage 6: Completion    → Verify and document completion
 
 2. **Run verification commands** (from PROGRESS.md):
    ```bash
-   grep "status: inbox" gourmet/[city]/candidates.md  # Should return nothing
-   grep -i "TODO\|pending" gourmet/[city]/excluded.md  # Should return nothing
-   grep -E "^## (Top Picks|Backups|Dining Strategy|To-Do)" gourmet/[city]/top-places.md  # Should find all 4
-   grep "\- \[ \]" gourmet/[city]/overview.md  # Should return nothing
+   grep "status: inbox" gourmet/taipei/candidates.md  # Should return nothing
+   grep -i "TODO\|pending" gourmet/taipei/excluded.md  # Should return nothing
+   grep -E "^## (Top Picks|Backups|Dining Strategy|To-Do)" gourmet/taipei/top-places.md  # Should find all 4
+   grep "\- \[ \]" gourmet/taipei/overview.md  # Should return nothing
    ```
 
 3. **Update progress tracking**:
@@ -1018,17 +1009,17 @@ consistent reviews indicate reliable experience
 | 25-29 | Marginal | Borderline, needs justification | Consider rejection |
 | 0-24 | Reject | Below standard | Reject with documentation |
 
-**Tier targets per city**:
+**Tier targets for Taipei**:
 - **Top Picks**: 5-10 candidates (quality over quantity)
 - **Backups**: 3-5 candidates (alternatives if Top Picks unavailable)
-- **Total recommendations**: 8-15 per city (avoid overwhelming)
+- **Total recommendations**: 8-15 (avoid overwhelming)
 
 ### Scoring Consistency Rules
 
 **To maintain consistency across candidates**:
 
 1. **Score relative to category**:
-   - Compare restaurants to restaurants, cafes to cafes
+   - Compare restaurants within similar price bands or styles
    - Don't penalize casual places for not being fine dining
    - Adjust expectations by price band
 
@@ -1075,7 +1066,7 @@ consistent reviews indicate reliable experience
 1. **Tourist trap**: Multi-source evidence of targeting tourists with inflated prices/quality
 2. **Safety/hygiene**: Multiple complaints about food safety or cleanliness
 3. **Service**: Consistent severe service issues (rude staff, frequent errors)
-4. **Practical**: Location truly inaccessible or always closed during trip dates
+4. **Practical**: Location truly inaccessible or always closed during the visit window
 
 ### Human Override Conditions
 
@@ -1083,7 +1074,7 @@ consistent reviews indicate reliable experience
 
 1. **Strategic considerations**:
    - Need geographic coverage in underserved area
-   - Need category diversity (e.g., only dessert place in city)
+   - Need cuisine diversity (e.g., only hot pot option in Taipei)
    - Historical/cultural significance beyond food quality
 
 2. **Context not captured in rubric**:
@@ -1139,7 +1130,7 @@ consistent reviews indicate reliable experience
 
 ### Definition of Done
 
-**A city is marked "✅ Completed" when ALL of the following are met:**
+**Taipei is marked "✅ Completed" when ALL of the following are met:**
 
 1. **All candidates triaged**:
    - No `status: inbox` entries in candidates.md
@@ -1176,19 +1167,19 @@ consistent reviews indicate reliable experience
 
 ```bash
 # Should return nothing (no inbox entries)
-grep "status: inbox" gourmet/[city]/candidates.md
+grep "status: inbox" gourmet/taipei/candidates.md
 
 # Should return nothing (no pending decisions)
-grep -i "TODO\|pending" gourmet/[city]/excluded.md
+grep -i "TODO\|pending" gourmet/taipei/excluded.md
 
 # Should find all 4 sections
-grep -E "^## (Top Picks|Backups|Dining Strategy|To-Do)" gourmet/[city]/top-places.md
+grep -E "^## (Top Picks|Backups|Dining Strategy|To-Do)" gourmet/taipei/top-places.md
 
 # Should return nothing (no unchecked research items)
-grep "\- \[ \]" gourmet/[city]/overview.md
+grep "\- \[ \]" gourmet/taipei/overview.md
 ```
 
-**Expected results for completed city**:
+**Expected results for Taipei completed**:
 - No inbox entries found ✓
 - No pending decisions found ✓
 - All 4 sections found in top-places.md ✓
@@ -1325,7 +1316,7 @@ grep "\- \[ \]" gourmet/[city]/overview.md
 - Detailed research per place: 15-20 minutes
 - Scoring per place: 5-10 minutes
 - Synthesis (top-places.md): 30-45 minutes
-- **Total per city**: 4-6 hours for 10 candidates
+- **Total for Taipei**: 4-6 hours for 10 candidates
 
 ### Pattern Recognition
 
@@ -1364,7 +1355,7 @@ grep "\- \[ \]" gourmet/[city]/overview.md
 4. **Ignoring practical constraints**: Reservation policies, closed days, queues matter
 5. **Score inflation**: Not everything can be 40+; 35-38 is still excellent
 6. **Geographic clustering**: Ensure coverage across different neighborhoods
-7. **Category imbalance**: Need mix of casual, special occasion, dessert
+7. **Format imbalance**: Need mix of casual and special occasion options
 8. **Deleting instead of documenting**: Preserve audit trail via excluded.md
 
 ### Research Quality Checklist
@@ -1380,7 +1371,7 @@ grep "\- \[ \]" gourmet/[city]/overview.md
 - ✓ Price range from Tabelog (夜予算/昼予算)
 - ✓ Most common complaints noted
 - ✓ Tourist vs local clientele assessed
-- ✓ Seasonal considerations documented (for September-October trip)
+- ✓ Seasonal considerations documented (if applicable)
 
 ---
 
@@ -1388,33 +1379,17 @@ grep "\- \[ \]" gourmet/[city]/overview.md
 
 ### Language Rules
 
-**Primary language: English**
-- All operational procedures
-- All rules and guidelines
-- All workflow descriptions
-- All rubric definitions
-- All decision criteria
-
-**Japanese: Supplementary only**
-- Short clarifications (e.g., 食べログ = Tabelog)
-- Restaurant/dish names (original language)
-- Direct quotes from Japanese sources
-- Brief contextual notes
-
-**Prohibited**:
-- ❌ Duplicating content in both languages
-- ❌ Full paragraphs in Japanese when English suffices
-- ❌ Using Japanese when English technical term exists
+Language requirements are defined in `CONSTITUTION.md`. This section does not restate them.
 
 ### File Naming Conventions
 
 **Repository-level files**:
-- `AGENTS.md`: This file (English)
-- `PROGRESS.md`: Research progress tracker (English)
-- `README.md`: Project overview (Japanese - traveler-facing)
+- `AGENTS.md`: This file
+- `PROGRESS.md`: Research progress tracker
+- `README.md`: Project overview (see `CONSTITUTION.md` for language requirements)
 
-**City directory names**:
-- Use romanized, de-identified names: `city-a`, `city-b`, `city-c`, `city-d`
+**City directory name**:
+- `taipei`
 - Lowercase, no spaces, no special characters
 
 **City file names** (standardized, no variation):
@@ -1463,7 +1438,7 @@ grep "\- \[ \]" gourmet/[city]/overview.md
 ### Research Workflow Checklist
 
 - [ ] **Stage 0: Initialize**
-  - [ ] Create city directory and copy templates from templates/
+  - [ ] Create `gourmet/taipei/` and copy templates from templates/
   - [ ] Create overview.md
   - [ ] Conduct initial web searches
   - [ ] Gather 15-25 candidates
@@ -1504,9 +1479,9 @@ grep "\- \[ \]" gourmet/[city]/overview.md
 ### Essential URLs
 
 - **PROGRESS.md**: Detailed completion criteria and verification commands
-- **README.md**: Traveler-facing project overview (Japanese)
+- **README.md**: Traveler-facing project overview (see `CONSTITUTION.md` for language requirements)
 - **templates/**: Template files for creating new city research documentation
-- **City directories**: `gourmet/[city]/`
+- **City directory**: `gourmet/taipei/`
 
 ### Key Principles
 
