@@ -15,16 +15,27 @@
 - 研究策略（優先順序與限制）
 - 進度清單（研究完成度追蹤）
 
-### 2. candidates.md
+### 2. inbox.md
+未研究候選店的暫存清單。
+
+**使用方式**：快速記錄發現的候選店，避免遺漏。開始詳細研究時，將店家移至 candidates.md。
+
+**章節**：
+- 依料理類別分類的候選清單
+- 優先度評估（高/中/低）
+- 使用說明
+
+### 3. candidates.md
 候選餐廳表格與摘要。
 
 **使用方式**：用此模板維護所有候選餐廳的結構化清單。每發現新店就新增表格列。
 
 **重點功能**：
 - 含必要欄位的表格：name, category, area, type, google_maps_url, status, score, sources, notes
-- 狀態值：inbox | researching | shortlisted | rejected | top
+- 狀態值：researching | shortlisted | rejected | top
+- **注意**: candidates.md 中不使用 inbox 狀態（未研究的候選店應保留在 inbox.md）
 
-### 3. notes.md
+### 4. notes.md
 詳細證據與研究筆記。
 
 **使用方式**：為每個候選餐廳記錄完整研究結果，包含所有來源與評分細節。
@@ -35,7 +46,7 @@
 - 實用資訊（預約、營業時間、公休日）
 - 評論模式與優缺點
 
-### 4. top-places.md
+### 5. top-places.md
 最終推薦清單。
 
 **使用方式**：完成研究後彙整最終推薦，依分數區間整理。
@@ -47,7 +58,7 @@
 - Dining Strategy - 時間規劃、預約、預算、交通
 - To-Do - 旅行執行清單
 
-### 5. excluded.md
+### 6. excluded.md
 被排除的店家與理由。
 
 **使用方式**：記錄被考量但最後排除的店家與原因，避免重複研究並維持稽核軌跡。
@@ -61,12 +72,13 @@
 
 1. **新城市**：
    - 在 `gourmet/[城市名稱]/` 下建立新目錄
-   - 將 5 個模板全部複製到新目錄
+   - 將 6 個模板全部複製到新目錄
    - 先從 `overview.md` 建立背景與策略
 
 2. **依流程操作**：
    - 從 overview.md 開始（背景與策略）
-   - 將候選店加入 candidates.md
+   - 將初步發現的候選店快速加入 inbox.md
+   - 選擇優先候選店移至 candidates.md 並標記為 researching
    - 深入研究重點店家並記錄於 notes.md
    - 依研究結果更新 candidates.md 分數
    - 把排除的店移至 excluded.md 並附上理由
@@ -76,6 +88,7 @@
 3. **漸進式揭露**：
    - 每個檔案只聚焦其用途
    - overview.md = 快速導覽
+   - inbox.md = 工作管理（待研究清單）
    - top-places.md = 可執行的推薦
    - candidates.md = 完整候選清單
    - notes.md = 詳細證據
