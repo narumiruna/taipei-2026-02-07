@@ -182,49 +182,26 @@ gourmet/
 
 #### 1. overview.md
 **Purpose**: Quick orientation and research strategy  
-**Audience**: New researchers, project managers  
-**Reading time**: 5 minutes  
-**Contains**:
-- Travel context and group constraints
-- Taipei-specific food highlights (e.g., a local noodle specialty)
-- Research strategy and priorities
-- Progress checklist (research completion tracking)
-- Important constraints (holidays, hours, transportation)
+**Contains**: Travel context, group constraints, food highlights, research strategy, progress checklist
 
 **Update trigger**: Project start, strategy changes, completion milestones
 
 #### 2. inbox.md
 **Purpose**: Temporary holding area for unresearched candidates  
-**Audience**: Researchers prioritizing work, avoiding duplicates  
-**Reading time**: 2-5 minutes  
-**Contains**:
-- Simple list of restaurant names and basic info
-- Minimal structure (name, area, type, source)
-- No scores, no detailed research yet
-- Quick-add format to prevent losing candidates
-
-**Update trigger**: New candidate discovered, candidate moved to research pipeline
+**Contains**: Simple list (name, area, type, source), no scores
 
 **Workflow**:
-- **Add here first** when discovering new candidates
-- Move to candidates.md when starting detailed research
-- Prevents candidates from being forgotten
-- Enables batch prioritization
+- Add here first when discovering candidates
+- Move to candidates.md when starting research
+- Remove from inbox after migration
 
-**Migration rule**: Once a candidate moves to candidates.md with `status: researching`, remove from inbox.md to avoid duplication.
+**Migration rule**: Once moved to candidates.md with `status: researching`, remove from inbox.md.
 
 #### 3. candidates.md
 **Purpose**: Complete candidate inventory with status and scores  
-**Audience**: Researchers scanning all options, comparing scores  
-**Reading time**: 10 minutes (table scan)  
-**Contains**:
-- Structured table with all candidates
-- Required columns: name, category, area, type, google_maps_url, status, score, sources, notes
-- Brief summary only (details in notes.md)
+**Contains**: Structured table with columns: name, category, area, type, google_maps_url, status, score, sources, notes
 
-**Update trigger**: New candidate discovered, status change, score assigned
-
-**Preservation rule**: NEVER delete entries unless duplicate, incorrect, or permanently closed. Use `status: rejected` and document in excluded.md instead.
+**Preservation rule**: NEVER delete entries. Use `status: rejected` and document in excluded.md instead.
 
 **Status values**:
 - `researching`: Active research in progress
@@ -232,43 +209,19 @@ gourmet/
 - `top`: Promoted to Top Picks
 - `rejected`: Excluded with reason in excluded.md
 
-**Note**: `inbox` status is NOT used in candidates.md. Unresearched candidates stay in inbox.md until research begins.
+**Note**: Unresearched candidates stay in inbox.md until research begins.
 
 #### 4. notes.md
 **Purpose**: Detailed evidence trail and scoring justification  
-**Audience**: Deep researchers, auditors, score validators  
-**Reading time**: Variable (by section)  
-**Contains**:
-- Evidence sections per candidate (sources, ratings, reviews)
-- Scoring breakdown with rationale
-- Practical information (reservations, queues, hours)
-- Source URLs with access dates
-
-**Update trigger**: New evidence collected, score calculated, practical info discovered
+**Contains**: Evidence sections per candidate (sources, ratings, reviews), scoring breakdown, practical information
 
 #### 5. excluded.md
 **Purpose**: Audit trail for rejected candidates  
-**Audience**: Auditors, researchers avoiding duplicate work  
-**Reading time**: 5-10 minutes  
-**Contains**:
-- Categorized exclusion reasons
-- Brief explanation per excluded place
-- Source references supporting exclusion
-- Date of exclusion decision
-
-**Update trigger**: Candidate rejected, exclusion reason documented
+**Contains**: Categorized exclusion reasons, source references, decision dates
 
 #### 6. top-places.md
 **Purpose**: Actionable final recommendations  
-**Audience**: Travelers making reservations, day planners  
-**Reading time**: 10-15 minutes  
-**Contains**:
-- Top Picks (score ≥35) in descending score order
-- Backups (score 30-34) in descending score order
-- Dining Strategy (timing, reservations, budget, transportation)
-- To-Do (trip execution checklist - NOT research completion)
-
-**Update trigger**: Candidate promoted to Top Pick/Backup, strategy finalized, completion
+**Contains**: Top Picks (≥35), Backups (30-34), Dining Strategy, To-Do (trip execution)
 
 ### Progressive Disclosure Principle
 
@@ -314,60 +267,27 @@ excluded.md → [reason] → (Optional) notes.md for details
 
 **Location**: `templates/` directory at repository root
 
-**Purpose**: Provide standardized starting points for creating city-specific research documentation.
+**Purpose**: Standardized starting points for city-specific research documentation.
 
-**Available Templates**:
+**Available Templates** (6 files):
 
-The `templates/` directory contains markdown templates for all six required files:
-
-1. **overview.md** - City food strategy and progress tracker
-   - Travel information template (dates, accommodation, attractions)
-   - Food highlights section (local dishes and specialties)
-   - Research strategy template (priorities and constraints)
-   - Progress checklist template (research completion tracking)
-
+1. **overview.md** - City strategy, progress tracker
 2. **inbox.md** - Unresearched candidates holding area
-   - Simple list format for quick candidate addition
-   - Basic fields: name, area, type, source
-   - No scores or detailed research required
-   - Easy batch prioritization
-
-3. **candidates.md** - Candidate restaurants table
-   - Pre-structured table with all required columns
-   - Status value examples (researching | shortlisted | rejected | top)
-   - Placeholder rows showing expected format
-   - Note: Does NOT include "inbox" status (use inbox.md for that)
-
-4. **notes.md** - Detailed evidence and research notes
-   - Evidence collection template with all required sources
-   - 50-point scoring rubric breakdown structure
-   - Practical information fields (reservation, hours, closed days)
-   - Review patterns and pros/cons sections
-
-5. **top-places.md** - Final recommendation list
-   - Top Picks section template (35+ points)
-   - Backups section template (30-34 points)
-   - Researching section template
-   - Dining Strategy template (time planning, reservations, budget, access)
-   - To-Do section template (trip execution checklist)
-
-6. **excluded.md** - Excluded places documentation
-   - Lower priority candidates section
-   - Not researched further section
-   - Exclusion reason categories (Tourist Trap, Low Score, Service Issues, etc.)
+3. **candidates.md** - Structured table with all required columns
+4. **notes.md** - Evidence collection and scoring breakdown
+5. **top-places.md** - Final recommendations and dining strategy
+6. **excluded.md** - Rejected candidates with reasons
 
 **Usage**:
 
-When starting research for a new city:
-1. Create new directory: `gourmet/[cityname]/`
-2. Copy all 6 templates from `templates/` to `gourmet/taipei/`
-3. Start with `overview.md` to establish context and strategy
-4. Use `inbox.md` to quickly collect candidate names as you discover them
-5. Move candidates from inbox.md to candidates.md when starting detailed research
-6. Replace placeholder text (marked with `[brackets]`) with actual content
-7. Follow the six-stage research workflow (see below)
+1. Create directory: `gourmet/[cityname]/`
+2. Copy all 6 templates from `templates/`
+3. Start with `overview.md` for context
+4. Add discoveries to `inbox.md`
+5. Move to `candidates.md` when starting detailed research
+6. Replace placeholder text (marked with `[brackets]`)
 
-**Template Reference**: See `templates/README.md` for detailed usage instructions and examples.
+**Reference**: See `templates/README.md` for detailed instructions.
 
 ---
 
@@ -860,28 +780,15 @@ Stage 6: Completion    → Verify and document completion
 
 **Seasonal factors to document**:
 
-1. **Ingredients** (especially seafood):
-   - Spiny lobster (local specialty): Peak season October-April
-   - 岩牡蠣 (rock oysters): Peak season June-August
-   - 的矢かき (Matoya oysters): Year-round but best winter
-   - Note: Trip is late September, transitioning seasons
-
-2. **Tourist volume**:
-   - Peak season (Golden Week, summer, New Year)
-   - Off-peak (January-February, September)
-   - Trip timing: Late September = transitional (moderate crowds)
-
-3. **Operating hours/closures**:
-   - Summer-only items (赤福氷)
-   - Winter-only items (赤福ぜんざい)
-   - Monthly specials (朔日餅 - 1st of month only)
-   - Irregular closures for holidays
+1. **Ingredients**: Note peak seasons for key ingredients (seafood, produce)
+2. **Tourist volume**: Peak vs off-peak seasons affecting availability
+3. **Operating hours/closures**: Seasonal menu items, holiday closures
 
 **Documentation requirement**:
 ```markdown
 **Seasonal notes**:
 - Best visit season: [season] because [reason]
-- Trip timing (Sept 25-Oct 4): [適切/注意が必要/オフシーズン]
+- Trip timing: [date range] = [適切/注意が必要/オフシーズン]
 - Seasonal considerations: [specific factors]
 ```
 
@@ -953,12 +860,6 @@ reviews consistently praise 備長炭焼き technique
 - Google Maps price level (¥/¥¥/¥¥¥/¥¥¥¥)
 - Review mentions of portions or value
 - Comparison to similar establishments
-
-**Price bands** (rough guide for Japanese dining):
-- Budget: <¥1,000
-- Moderate: ¥1,000-3,000
-- Upscale: ¥3,000-10,000
-- Fine dining: ¥10,000+
 
 **Example scoring**:
 ```
@@ -1321,14 +1222,11 @@ grep "\- \[ \]" gourmet/taipei/overview.md
 
 **Self-review checklist before marking complete**:
 
-- [ ] All candidates have scores or exclusion reasons
-- [ ] Every score has documented justification
+- [ ] All candidates scored or excluded with documented reasons
 - [ ] All sources have working URLs
-- [ ] No unsupported claims or fabricated data
-- [ ] Conflicts documented and resolved
-- [ ] Uncertainty explicitly marked
-- [ ] top-places.md has all required sections
-- [ ] Dining Strategy is practical and complete
+- [ ] No fabricated data; conflicts resolved; uncertainty marked
+- [ ] top-places.md complete with all sections
+- [ ] Dining Strategy practical and complete
 - [ ] All verification commands pass
 - [ ] PROGRESS.md and README.md updated
 
@@ -1359,13 +1257,13 @@ grep "\- \[ \]" gourmet/taipei/overview.md
 
 ### Efficient Research Tactics
 
-1. **Start with overview.md**: Provides context for all subsequent work
+1. **Start with overview.md** for context
 2. **Batch web searches**: Gather 20+ candidates in 3-4 searches
 3. **Prioritize ruthlessly**: Research top 3-5 first, expand if needed
 4. **Use comprehensive queries**: "[Place] [City] 食べログ 予約 口コミ" yields most info
-5. **Document as you go**: Incremental updates prevent information loss
+5. **Document incrementally**: Prevent information loss
 
-**Time estimates** (for planning):
+**Time estimates**:
 - Overview + candidate collection: 30 minutes
 - Detailed research per place: 15-20 minutes
 - Scoring per place: 5-10 minutes
@@ -1375,56 +1273,51 @@ grep "\- \[ \]" gourmet/taipei/overview.md
 ### Pattern Recognition
 
 **Tourist trap signals**:
-- Only located near major attractions
-- Overly generic positive reviews
-- No mention of Japanese locals in reviews
+- Located only near major attractions
+- Generic positive reviews; no local mentions
 - Price significantly higher than similar places
 
 **Authentic signals**:
 - High Tabelog ratings from verified locals
-- Mixed tourist/local clientele
-- Family-owned, long history
+- Mixed tourist/local clientele; family-owned
 - Specific dishes praised repeatedly
 - Reservation difficulty (genuine popularity)
 
 **Red flags**:
-- Inconsistent service complaints (>20% of reviews)
-- Hygiene issues mentioned multiple times
-- Closed unexpectedly/irregular hours
-- Conflicting information across sources
+- Service complaints (>20% of reviews)
+- Multiple hygiene issues
+- Irregular hours; conflicting information
 
 **Green flags**:
-- Michelin recognition or 百名店 award
+- Michelin/百名店 recognition
 - Tabelog 3.8+ with 500+ reviews
-- Specific technique or ingredient praised
-- Consistent experience across years
+- Specific technique/ingredient praised
+- Consistent experience over time
 
 ### Common Pitfalls
 
 **Avoid these mistakes**:
 
-1. **Research sprawl**: Don't try to research everything at once
-2. **Skipping overview.md**: Context is essential for prioritization
+1. **Research sprawl**: Focus on prioritized candidates, not everything at once
+2. **Skipping overview.md**: Context essential for prioritization
 3. **Single-source reliance**: Always cross-reference 4+ sources
-4. **Ignoring practical constraints**: Reservation policies, closed days, queues matter
-5. **Score inflation**: Not everything can be 40+; 35-38 is still excellent
-6. **Geographic clustering**: Ensure coverage across different neighborhoods
-7. **Format imbalance**: Need mix of casual and special occasion options
-8. **Deleting instead of documenting**: Preserve audit trail via excluded.md
+4. **Ignoring constraints**: Reservation policies, closed days, queues matter
+5. **Score inflation**: Reserve 9-10 scores for truly exceptional; 35-38 is excellent
+6. **Poor coverage**: Ensure geographic spread and format variety (casual/upscale)
+7. **Deleting records**: Use excluded.md to preserve audit trail
 
 ### Research Quality Checklist
 
 **Before finalizing any candidate, verify**:
 
-- ✓ Exact rating and review count on Google Maps and Tabelog
-- ✓ Patterns from Google口コミ (Japanese reviews)
+- ✓ Exact ratings and review counts (Google Maps, Tabelog)
+- ✓ Patterns from Japanese reviews (Google口コミ)
 - ✓ Signature dishes identified
-- ✓ Reservation requirements clear
-- ✓ Closed days confirmed
-- ✓ Expected wait time documented (if no reservation)
-- ✓ Price range from Tabelog (夜予算/昼予算)
-- ✓ Most common complaints noted
-- ✓ Tourist vs local clientele assessed
+- ✓ Reservation requirements and closed days confirmed
+- ✓ Wait time documented (if no reservation)
+- ✓ Price range verified (Tabelog 夜予算/昼予算)
+- ✓ Common complaints noted
+- ✓ Clientele assessed (tourist vs local)
 - ✓ Seasonal considerations documented (if applicable)
 
 ---
