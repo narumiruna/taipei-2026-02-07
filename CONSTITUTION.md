@@ -10,7 +10,8 @@
 - The goal is to find a restaurant in Taipei City suitable for group dining of around 16–20 people.
 - Build **evidence-based food recommendations** limited to restaurants.
 - Target city is **Taipei**.
-- ALL documents MUST be written in Traditional Chinese (Taiwan).
+- `AGENTS.md` and `PROGRESS.md` MUST be written in English.
+- ALL other documents MUST be written in Traditional Chinese (Taiwan).
 
 ## Documentation Principles
 
