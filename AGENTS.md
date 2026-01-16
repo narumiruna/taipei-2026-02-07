@@ -165,12 +165,13 @@ This document defines the complete research methodology for evidence-based resta
 
 ### File Organization
 
-The project uses a single city directory under `gourmet/` with exactly five files following the progressive disclosure principle:
+The project uses a single city directory under `gourmet/` with exactly six files following the progressive disclosure principle:
 
 ```
 gourmet/
   taipei/
     overview.md    - City context, strategy, research progress
+    inbox.md       - Unresearched candidates awaiting investigation
     candidates.md  - All candidates in structured table format
     notes.md       - Detailed evidence and scoring rationale  
     excluded.md    - Rejected candidates with exclusion reasons
@@ -192,7 +193,27 @@ gourmet/
 
 **Update trigger**: Project start, strategy changes, completion milestones
 
-#### 2. candidates.md
+#### 2. inbox.md
+**Purpose**: Temporary holding area for unresearched candidates  
+**Audience**: Researchers prioritizing work, avoiding duplicates  
+**Reading time**: 2-5 minutes  
+**Contains**:
+- Simple list of restaurant names and basic info
+- Minimal structure (name, area, type, source)
+- No scores, no detailed research yet
+- Quick-add format to prevent losing candidates
+
+**Update trigger**: New candidate discovered, candidate moved to research pipeline
+
+**Workflow**:
+- **Add here first** when discovering new candidates
+- Move to candidates.md when starting detailed research
+- Prevents candidates from being forgotten
+- Enables batch prioritization
+
+**Migration rule**: Once a candidate moves to candidates.md with `status: researching`, remove from inbox.md to avoid duplication.
+
+#### 3. candidates.md
 **Purpose**: Complete candidate inventory with status and scores  
 **Audience**: Researchers scanning all options, comparing scores  
 **Reading time**: 10 minutes (table scan)  
@@ -205,7 +226,15 @@ gourmet/
 
 **Preservation rule**: NEVER delete entries unless duplicate, incorrect, or permanently closed. Use `status: rejected` and document in excluded.md instead.
 
-#### 3. notes.md
+**Status values**:
+- `researching`: Active research in progress
+- `shortlisted`: Scored and under consideration
+- `top`: Promoted to Top Picks
+- `rejected`: Excluded with reason in excluded.md
+
+**Note**: `inbox` status is NOT used in candidates.md. Unresearched candidates stay in inbox.md until research begins.
+
+#### 4. notes.md
 **Purpose**: Detailed evidence trail and scoring justification  
 **Audience**: Deep researchers, auditors, score validators  
 **Reading time**: Variable (by section)  
@@ -217,7 +246,7 @@ gourmet/
 
 **Update trigger**: New evidence collected, score calculated, practical info discovered
 
-#### 4. excluded.md
+#### 5. excluded.md
 **Purpose**: Audit trail for rejected candidates  
 **Audience**: Auditors, researchers avoiding duplicate work  
 **Reading time**: 5-10 minutes  
@@ -229,7 +258,7 @@ gourmet/
 
 **Update trigger**: Candidate rejected, exclusion reason documented
 
-#### 5. top-places.md
+#### 6. top-places.md
 **Purpose**: Actionable final recommendations  
 **Audience**: Travelers making reservations, day planners  
 **Reading time**: 10-15 minutes  
@@ -252,7 +281,7 @@ README.md → top-places.md → Make reservations
 
 **Quick research scan**:
 ```
-overview.md → candidates.md (table scan) → Identify priorities
+overview.md → inbox.md (未研究清單) → candidates.md (table scan) → Identify priorities
 ```
 
 **Deep evidence review**:
@@ -277,7 +306,9 @@ excluded.md → [reason] → (Optional) notes.md for details
 - ❌ Duplicating scores across multiple files
 - ❌ Hiding final picks deep in notes.md
 - ❌ Deleting rejected candidates instead of documenting
-- ❌ Creating files outside the five-file structure
+- ❌ Creating files outside the six-file structure
+- ❌ Keeping unresearched candidates in candidates.md (use inbox.md instead)
+- ❌ Duplicating entries between inbox.md and candidates.md
 
 ### Template Files
 
@@ -287,7 +318,7 @@ excluded.md → [reason] → (Optional) notes.md for details
 
 **Available Templates**:
 
-The `templates/` directory contains markdown templates for all five required files:
+The `templates/` directory contains markdown templates for all six required files:
 
 1. **overview.md** - City food strategy and progress tracker
    - Travel information template (dates, accommodation, attractions)
@@ -295,25 +326,32 @@ The `templates/` directory contains markdown templates for all five required fil
    - Research strategy template (priorities and constraints)
    - Progress checklist template (research completion tracking)
 
-2. **candidates.md** - Candidate restaurants table
-   - Pre-structured table with all required columns
-   - Status value examples (inbox | researching | shortlisted | rejected | top)
-   - Placeholder rows showing expected format
+2. **inbox.md** - Unresearched candidates holding area
+   - Simple list format for quick candidate addition
+   - Basic fields: name, area, type, source
+   - No scores or detailed research required
+   - Easy batch prioritization
 
-3. **notes.md** - Detailed evidence and research notes
+3. **candidates.md** - Candidate restaurants table
+   - Pre-structured table with all required columns
+   - Status value examples (researching | shortlisted | rejected | top)
+   - Placeholder rows showing expected format
+   - Note: Does NOT include "inbox" status (use inbox.md for that)
+
+4. **notes.md** - Detailed evidence and research notes
    - Evidence collection template with all required sources
    - 50-point scoring rubric breakdown structure
    - Practical information fields (reservation, hours, closed days)
    - Review patterns and pros/cons sections
 
-4. **top-places.md** - Final recommendation list
+5. **top-places.md** - Final recommendation list
    - Top Picks section template (35+ points)
    - Backups section template (30-34 points)
    - Researching section template
    - Dining Strategy template (time planning, reservations, budget, access)
    - To-Do section template (trip execution checklist)
 
-5. **excluded.md** - Excluded places documentation
+6. **excluded.md** - Excluded places documentation
    - Lower priority candidates section
    - Not researched further section
    - Exclusion reason categories (Tourist Trap, Low Score, Service Issues, etc.)
@@ -322,10 +360,12 @@ The `templates/` directory contains markdown templates for all five required fil
 
 When starting research for a new city:
 1. Create new directory: `gourmet/[cityname]/`
-2. Copy all 5 templates from `templates/` to `gourmet/taipei/`
+2. Copy all 6 templates from `templates/` to `gourmet/taipei/`
 3. Start with `overview.md` to establish context and strategy
-4. Replace placeholder text (marked with `[brackets]`) with actual content
-5. Follow the six-stage research workflow (see below)
+4. Use `inbox.md` to quickly collect candidate names as you discover them
+5. Move candidates from inbox.md to candidates.md when starting detailed research
+6. Replace placeholder text (marked with `[brackets]`) with actual content
+7. Follow the six-stage research workflow (see below)
 
 **Template Reference**: See `templates/README.md` for detailed usage instructions and examples.
 
@@ -354,8 +394,8 @@ Stage 6: Completion    → Verify and document completion
 **Actions**:
 1. Set up directory structure:
    - Create directory: `gourmet/taipei/`
-   - Copy templates from `templates/` directory (see <a>Template Files</a>)
-   - This provides standardized starting structure for all five required files
+   - Copy templates from `templates/` directory (see [Template Files](#template-files))
+   - This provides standardized starting structure for all six required files
 
 2. Create `overview.md` (using template as starting point):
    - Group size constraints and dining context
@@ -364,13 +404,19 @@ Stage 6: Completion    → Verify and document completion
    - Progress checklist (initially empty)
    - Known constraints (business hours, holidays, group capacity)
 
-3. Gather initial candidate pool using web_search:
+3. Create `inbox.md` for quick candidate collection:
+   - Simple list format ready for new discoveries
+   - No detailed structure needed yet
+   - Serves as scratchpad during initial searches
+
+4. Gather initial candidate pool using web_search:
    - "best [local specialty dish] restaurants [year]" (e.g., "best [local noodle specialty] restaurants 2026")
    - "best [category] in Taipei" (e.g., "best hot pot Taipei")
    - "[specific dish] restaurants Taipei" (e.g., "[local specialty] restaurants Taipei")
    - Focus on recent guides (2024-2026) and local sources
+   - **Add all discoveries to inbox.md immediately** to avoid forgetting
 
-4. Batch similar searches (efficiency):
+5. Batch similar searches (efficiency):
    - One search: main restaurants by cuisine type
    - One search: casual/local specialties
    - One search: large-group dining or private-room options
@@ -378,7 +424,7 @@ Stage 6: Completion    → Verify and document completion
 **Success criteria**:
 - City directory created with all template files
 - overview.md created with complete sections
-- 15-25 initial candidates identified
+- inbox.md populated with 15-25 initial candidates
 - Research priorities documented
 
 **Time estimate**: 30 minutes
@@ -387,27 +433,33 @@ Stage 6: Completion    → Verify and document completion
 
 ### Stage 1: Discovery and Candidate Collection
 
-**Objective**: Build comprehensive candidate list with basic information
+**Objective**: Build comprehensive candidate list, moving from inbox.md to structured candidates.md
 
 **Actions**:
-1. Use `candidates.md` template (already copied in Stage 0) with structured table
-2. Add all discovered candidates to table with required fields:
+1. Review `inbox.md` for all discovered candidates
+
+2. Select 3-5 highest-priority candidates to move to `candidates.md`:
+   - Consider: local specialties, high ratings, Michelin mentions, 百名店
+   - Group capacity confirmed (16-20 people)
+   - Good geographic distribution
+
+3. For each selected candidate, add to `candidates.md` table with required fields:
    - `name`: Restaurant name (prefer original language)
    - `category`: restaurant
    - `area`: Neighborhood or district
    - `type`: Cuisine or specialty (e.g., hot pot, beef noodles)
    - `google_maps_url`: Google Maps link (search link acceptable initially)
-   - `status`: inbox (all start here)
+   - `status`: **researching** (starts here after moving from inbox)
    - `score`: - (empty initially)
    - `sources`: Brief list (e.g., "食べログ, Google Maps")
    - `notes`: One-line summary (expanded in notes.md later)
 
-3. Prioritize candidates:
-   - Mark 3-5 highest-priority candidates for immediate research
-   - Consider: local specialties, high ratings, Michelin mentions, 百名店
+4. **Remove moved candidates from inbox.md** to prevent duplication
+
+5. Continue adding new discoveries to inbox.md as they're found
 
 **Preservation rules**:
-- NEVER delete candidates from table
+- NEVER delete candidates from candidates.md table
 - Acceptable modifications only:
   - Merge duplicates
   - Correct errors
@@ -415,9 +467,10 @@ Stage 6: Completion    → Verify and document completion
 - Unwanted candidates: Set `status: rejected`, document in excluded.md
 
 **Success criteria**:
-- candidates.md table created and populated
-- All candidates have `status: inbox`
-- Top 3-5 priorities identified
+- 3-5 candidates moved from inbox.md to candidates.md
+- All moved candidates have `status: researching`
+- inbox.md updated (moved candidates removed)
+- Remaining candidates stay in inbox.md for future prioritization
 
 **Time estimate**: 20-30 minutes
 
@@ -470,7 +523,7 @@ Stage 6: Completion    → Verify and document completion
    ```
 
 3. **Update candidates.md**:
-   - Change `status` from `inbox` to `researching`
+   - Status already set to `researching` (from Stage 1)
    - Add brief summary to `notes` column (keep concise)
    - Keep `score` empty until Stage 3
 
