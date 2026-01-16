@@ -42,8 +42,8 @@
 | 八和和牛燒肉專門店 | restaurant | 大安區 | 日式燒肉 | https://www.google.com/maps/search/?api=1&query=八和和牛燒肉專門店+台北 | researching | -/50 | 愛食記 | 和牛專門，包廂10-20人 |
 | 金洹苑 KIN KAN EN | restaurant | 大安區 | 日式燒肉 | https://www.google.com/maps/search/?api=1&query=金洹苑+KIN+KAN+EN+台北 | researching | -/50 | 愛食記 | 和牛海鮮吃到飽，有包廂組合 |
 | 發肉燒肉餐酒館 | restaurant | 多區域 | 日式燒肉 | https://www.google.com/maps/search/?api=1&query=發肉燒肉餐酒館+台北 | researching | -/50 | 台北燒肉推薦 | 桌邊代烤，多種包廂規格 |
-| 南村私廚小酒棧 | restaurant | 大安區 | 眷村菜/台菜 | https://www.google.com/maps/search/?api=1&query=南村私廚小酒棧+台北 | researching | -/50 | 米其林餐盤推薦 | 連續三年米其林餐盤，多個包廂可容納10-60人 |
-| 春韭 晴光店 | restaurant | 中山區 | 無菜單台菜 | https://www.google.com/maps/search/?api=1&query=春韭+晴光店+台北 | researching | -/50 | inline, AI教父推薦 | 黃仁勳推薦，三層樓包廂，二樓或三樓適合20人 |
+| 南村私廚小酒棧 | restaurant | 大安區 | 眷村菜/台菜 | https://www.google.com/maps/search/?api=1&query=南村私廚小酒棧+台北 | shortlisted | 41/50 | Google Maps 4.3★, Michelin, inline, 6+ blogs | 米其林餐盤推薦3年+，中包廂12-24人適合16-20人團體 |
+| 春韭 晴光店 | restaurant | 中山區 | 無菜單台菜 | https://www.google.com/maps/search/?api=1&query=春韭+晴光店+台北 | shortlisted | 38/50 | Google 5.0★, inline, Jensen Huang推薦, 4+ news, 5+ blogs | 黃仁勳（NVIDIA CEO）推薦，三樓包廂20人含獨立廁所 |
 | 老烤箱 Antico Forno | restaurant | 大安區 | 義大利菜 | https://www.google.com/maps/search/?api=1&query=老烤箱+Antico+Forno+瑞安街141號 | researching | -/50 | 米其林指南推薦 | 米其林推薦義式餐廳，可包場，適合20人團體 |
 | Zaap | restaurant | 信義區 | 泰式料理 | https://www.google.com/maps/search/?api=1&query=Zaap+吳興街345巷6號 | researching | -/50 | 米其林指南推薦 | 預約制泰式私廚，約24席，可包場適合20人 |
 | 雞窩餐廳 | restaurant | 信義區 | 台菜 | https://www.google.com/maps/search/?api=1&query=雞窩餐廳+和平東路三段377號 | researching | -/50 | 愛食記 | 老字號砂鍋土雞湯，有包廂，適合5-10人（20人需併桌確認） |
