@@ -16,7 +16,7 @@
 | 如嬌花膠雞鍋物 | restaurant | 多區域 | 火鍋 | https://www.google.com/maps/search/?api=1&query=如嬌花膠雞鍋物+台北 | researching | -/50 | JJ.Hsu, 凱的日本食尚 | 美顏火鍋，有VIP包廂，桌邊服務 |
 | 小酌之家 | restaurant | 多區域 | 台菜 | https://www.google.com/maps/search/?api=1&query=小酌之家+台北 | researching | -/50 | Michelin Bib Gourmand | 米其林必比登推薦，傳統台菜 |
 | 泉源閣 (Bando Club) | restaurant | 北投區 | 台菜/辦桌 | https://www.google.com/maps/search/?api=1&query=泉源閣+北投 | rejected | 40/50 | Foodelicious, 晶華集團 | 位置太遠（北投），使用者不接受（已排除） |
-| My 灶 | restaurant | 多區域 | 台菜 | https://www.google.com/maps/search/?api=1&query=My灶+台北 | researching | -/50 | Foodelicious | 道地台菜，家常風味，有套餐 |
+| My 灶 | restaurant | 中山區 | 台菜 | https://www.google.com/maps/search/?api=1&query=My灶+台北 | shortlisted | 38/50 | Google Maps 4.1-4.2★, 米其林必比登5年+, 多家部落格 | 米其林必比登推薦5年，二樓VIP包廂可容納20人，麻油雞飯與燒焦皮蛋必點 |
 | 金蓬萊 | restaurant | 多區域 | 台菜 | https://www.google.com/maps/search/?api=1&query=金蓬萊+台北 | researching | -/50 | Foodelicious | 老字號台菜，炸排骨有名，適合宴席 |
 | 雞家莊 | restaurant | 多區域 | 台菜 | https://www.google.com/maps/search/?api=1&query=雞家莊+台北 | researching | -/50 | Michelin Bib Gourmand | 米其林必比登，三味雞有名 |
 | 一千零一夜廚房 | restaurant | 松山區 | 波斯/中東料理 | https://www.google.com/maps/search/?api=1&query=一千零一夜廚房+台北 | researching | -/50 | 愛食記, inline | 中東美食吃到飽，有包廂，價格實惠 |
@@ -49,7 +49,7 @@
 | 雞窩餐廳 | restaurant | 信義區 | 台菜 | https://www.google.com/maps/search/?api=1&query=雞窩餐廳+和平東路三段377號 | researching | -/50 | 愛食記 | 老字號砂鍋土雞湯，有包廂，適合5-10人（20人需併桌確認） |
 | 香米泰國料理 | restaurant | 多區域 | 泰式料理 | https://www.google.com/maps/search/?api=1&query=香米泰國料理+台北 | researching | -/50 | THAI SELECT認證 | 多家分店，大直店有10人包廂兩間，可容納20人 |
 | 金蓬萊遵古台菜餐廳 | restaurant | 北投區 | 台菜 | https://www.google.com/maps/search/?api=1&query=金蓬萊遵古台菜餐廳+台北 | researching | -/50 | 米其林一星 | 多次蟬聯米其林一星，北投酒家菜，大包廂 |
-| 十得私廚 | restaurant | 中山區 | 台菜 | https://www.google.com/maps/search/?api=1&query=十得私廚+台北 | researching | -/50 | 台北包廂推薦 | 精緻閩南台菜，包廂10-40人，金牌脆皮雞 |
+| 十得私廚 | restaurant | 中山區 | 台菜 | https://www.google.com/maps/search/?api=1&query=十得私廚+台北 | top | 40/50 | Google 4.5★, 愛食記, 多家部落格 | 金牌脆皮雞榮獲兩岸十大名點名菜，20人包廂適合16-20人團體，精緻台菜與酒家菜結合 |
 | baan Taipei | restaurant | 多區域 | 泰式料理 | https://www.google.com/maps/search/?api=1&query=baan+Taipei | researching | -/50 | 米其林推薦 | 曼谷米其林來台，8-20人專屬包廂 |
 | 教父牛排 | restaurant | 多區域 | 牛排 | https://www.google.com/maps/search/?api=1&query=教父牛排+台北 | researching | -/50 | 頂級牛排 | 西式餐飲界知名，有大包廂 |
 | Oie餐酒館 | restaurant | 大安區 | 法式料理 | https://www.google.com/maps/search/?api=1&query=Oie餐酒館+台北 | researching | -/50 | 包廂餐廳推薦 | 法式勃根地料理，包廂可打通 |
