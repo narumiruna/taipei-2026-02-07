@@ -1,95 +1,95 @@
-# Templates Directory
+# 模板目錄
 
-This directory contains markdown templates for creating city-specific gourmet research documentation.
+此目錄包含用於建立各城市美食研究文件的 Markdown 模板。
 
-## Available Templates
+## 可用模板
 
 ### 1. overview.md
-City food strategy and progress tracker.
+城市美食策略與進度追蹤。
 
-**Usage**: Copy this template when starting research for a new city. Replace `[City Name]` and fill in the sections with city-specific information.
+**使用方式**：在開始研究新城市時複製此模板，將 `[城市名稱]` 取代並填入該城市的資訊。
 
-**Sections**:
-- Travel information (dates, accommodation, attractions)
-- Food highlights (local dishes and specialties)
-- Research strategy (priorities and constraints)
-- Progress checklist (research completion tracking)
+**章節**：
+- 旅行資訊（日期、住宿、景點）
+- 美食重點（在地料理與特色）
+- 研究策略（優先順序與限制）
+- 進度清單（研究完成度追蹤）
 
 ### 2. candidates.md
-Candidate restaurants table and summary.
+候選餐廳表格與摘要。
 
-**Usage**: Use this template to maintain a structured list of all candidate restaurants. Add rows to the table as you discover new places.
+**使用方式**：用此模板維護所有候選餐廳的結構化清單。每發現新店就新增表格列。
 
-**Key Features**:
-- Structured table with required columns: name, category, area, type, google_maps_url, status, score, sources, notes
-- Status values: inbox | researching | shortlisted | rejected | top
+**重點功能**：
+- 含必要欄位的表格：name, category, area, type, google_maps_url, status, score, sources, notes
+- 狀態值：inbox | researching | shortlisted | rejected | top
 
 ### 3. notes.md
-Detailed evidence and research notes.
+詳細證據與研究筆記。
 
-**Usage**: Document comprehensive research findings for each candidate restaurant. Include all sources and rating details.
+**使用方式**：為每個候選餐廳記錄完整研究結果，包含所有來源與評分細節。
 
-**Key Features**:
-- Evidence template with all required sources (Google Maps, Tabelog, etc.)
-- 50-point scoring rubric breakdown
-- Practical information (reservation, hours, closed days)
-- Review patterns and pros/cons
+**重點功能**：
+- 含必要來源的證據模板（Google Maps、Tabelog 等）
+- 50 分評分規準拆解
+- 實用資訊（預約、營業時間、公休日）
+- 評論模式與優缺點
 
 ### 4. top-places.md
-Final recommendation list.
+最終推薦清單。
 
-**Usage**: Compile your top recommendations after completing research. Organize by score ranges.
+**使用方式**：完成研究後彙整最終推薦，依分數區間整理。
 
-**Sections**:
-- Top Picks (35+ points) - highly recommended places
-- Backups (30-34 points) - good alternatives
-- Researching - places still under investigation
-- Dining Strategy - time planning, reservations, budget, access
-- To-Do - trip execution checklist
+**章節**：
+- Top Picks（35 分以上）- 高度推薦
+- Backups（30-34 分）- 可替代選擇
+- Researching - 仍在調查的店家
+- Dining Strategy - 時間規劃、預約、預算、交通
+- To-Do - 旅行執行清單
 
 ### 5. excluded.md
-Excluded places with documented reasons.
+被排除的店家與理由。
 
-**Usage**: Record all places that were considered but excluded, with clear reasons. This prevents duplicate research and maintains audit trail.
+**使用方式**：記錄被考量但最後排除的店家與原因，避免重複研究並維持稽核軌跡。
 
-**Sections**:
-- Lower priority candidates (preserved for future research)
-- Not researched further
-- Exclusion reason categories (Tourist Trap, Low Score, Service Issues, etc.)
+**章節**：
+- 低優先度候選（保留以便未來研究）
+- 未再深入研究
+- 排除原因分類（觀光客向、低分、服務問題等）
 
-## How to Use
+## 使用流程
 
-1. **For a new city**: 
-   - Create a new directory under `gourmet/[cityname]/`
-   - Copy all 5 templates to the new directory
-   - Start with `overview.md` to establish context and strategy
+1. **新城市**：
+   - 在 `gourmet/[城市名稱]/` 下建立新目錄
+   - 將 5 個模板全部複製到新目錄
+   - 先從 `overview.md` 建立背景與策略
 
-2. **Follow the workflow**:
-   - Start with overview.md (context and strategy)
-   - Add candidates to candidates.md
-   - Research top candidates and document in notes.md
-   - Update scores in candidates.md based on research
-   - Move rejected candidates to excluded.md with reasons
-   - Finalize top-places.md with recommendations
-   - Mark progress in overview.md checklist
+2. **依流程操作**：
+   - 從 overview.md 開始（背景與策略）
+   - 將候選店加入 candidates.md
+   - 深入研究重點店家並記錄於 notes.md
+   - 依研究結果更新 candidates.md 分數
+   - 把排除的店移至 excluded.md 並附上理由
+   - 完成 top-places.md 的最終推薦
+   - 在 overview.md 勾選進度
 
-3. **Progressive Disclosure**:
-   - Keep each file focused on its purpose
-   - overview.md = quick orientation
-   - top-places.md = actionable recommendations
-   - candidates.md = complete candidate list
-   - notes.md = detailed evidence
-   - excluded.md = audit trail
+3. **漸進式揭露**：
+   - 每個檔案只聚焦其用途
+   - overview.md = 快速導覽
+   - top-places.md = 可執行的推薦
+   - candidates.md = 完整候選清單
+   - notes.md = 詳細證據
+   - excluded.md = 稽核紀錄
 
-## Documentation Standards
+## 文件標準
 
-- **Language**: Primarily Japanese for content, English for structured fields
-- **Dates**: ISO format (YYYY-MM-DD)
-- **Unknown information**: Use `unknown` rather than leaving blank
-- **Sources**: Always include actual URLs
-- **Scores**: Use the 50-point rubric consistently
-- **Links**: Must be valid Google Maps and Tabelog URLs
+- **語言**：內容以繁體中文為主，結構化欄位使用英文
+- **日期**：ISO 格式（YYYY-MM-DD）
+- **未知資訊**：使用 `unknown`，不要留空
+- **來源**：必須提供實際 URL
+- **分數**：一致使用 50 分評分規準
+- **連結**：需為有效的 Google Maps 與 Tabelog 連結
 
-## Reference
+## 參考
 
-See `AGENTS.md` for complete workflow documentation and research standards.
+完整流程與研究標準請見 `AGENTS.md`。

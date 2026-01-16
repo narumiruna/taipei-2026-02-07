@@ -1,93 +1,93 @@
-# [City Name] 詳細調査ノート
+# [城市名稱] 詳細調查筆記
 
-このファイルには、各候補店舗の詳細なエビデンス、スコアリング根拠、実用情報を記録します。
+此檔案用於記錄每個候選店的詳細證據、評分依據與實用資訊。
 
 ---
 
-## 調査済み店舗
+## 已調查店家
 
-### [店舗名]
+### [店名]
 
-**Official**: [公式サイトURL or "no official website"]
+**Official**: [官方網站 URL or "no official website"]
 
 **Google Maps**: X.X/5 (Y reviews)
 
 **食べログ (Tabelog)**: X.X/5 (Y reviews)
 - [URL]
-- 夜予算/昼予算: [価格帯]
-- Area ranking: [e.g., "[City] [カテゴリ]部門 X位" or check on Tabelog page]
-- 百名店: [e.g., "2024年[カテゴリ]百名店" or "not listed"]
+- 夜預算/昼預算: [價格帶]
+- Area ranking: [e.g., "[城市] [類別] 部門 X 位" or check on Tabelog page]
+- 百名店: [e.g., "2024 年 [類別] 百名店" or "not listed"]
 
-**その他のレーティング**: 
-- [Retty, Hot Pepper Gourmet, など]
+**其他評分**:
+- [Retty, Hot Pepper Gourmet, 等]
 
-**ガイド情報源**:
-- [URLと簡単な説明]
+**指南來源**:
+- [URL 與簡短說明]
 
-**Google口コミのパターン**:
-- [日本語レビューからのパターンまとめ]
+**Google 口コミ 模式**:
+- [日本語評論的模式整理]
 
-**繰り返し言及される長所**:
-- [複数のソースからリストアップ]
+**反覆出現的優點**:
+- [從多個來源整理]
 
-**繰り返し言及される短所**:
-- [複数のソースからリストアップ]
+**反覆出現的缺點**:
+- [從多個來源整理]
 
-**実用情報**:
+**實用資訊**:
 - reservation requirement: [required | recommended | optional | none | unknown]
-- best visiting time: [具体的な時間帯または"off-peak"など]
-- closed days: [定休日]
-- queue: [予約なしの場合の待ち時間]
+- best visiting time: [具體時間帶或 "off-peak" 等]
+- closed days: [公休日]
+- queue: [無預約時的等待時間]
 
 **Score (50-point rubric)**:
-- Taste / Quality (0–10): [点数] - [理由]
-- Value (0–10): [点数] - [理由]
-- Convenience (0–10): [点数] - [理由]
-- Consistency (0–10): [点数] - [理由]
-- Risk (0–10; 10 = low risk): [点数] - [理由]
-- **Total**: [合計点]/50
+- Taste / Quality (0–10): [分數] - [理由]
+- Value (0–10): [分數] - [理由]
+- Convenience (0–10): [分數] - [理由]
+- Consistency (0–10): [分數] - [理由]
+- Risk (0–10; 10 = low risk): [分數] - [理由]
+- **Total**: [總分]/50
 
 ---
 
-## エビデンステンプレート
+## 證據模板
 
-各店舗の調査には以下の情報を含めます：
+每間店的調查請包含以下資訊：
 
-### [店舗名]
+### [店名]
 
-**Official**: [公式サイトURL or "no official website"]
+**Official**: [官方網站 URL or "no official website"]
 
 **Google Maps**: X.X/5 (Y reviews)
 
 **食べログ (Tabelog)**: X.X/5 (Y reviews)
 - [URL]
-- 夜予算/昼予算: [価格帯]
-- 百名店: [e.g., "2024年[カテゴリ]百名店" or "not listed"]
+- 夜預算/昼預算: [價格帶]
+- 百名店: [e.g., "2024 年 [類別] 百名店" or "not listed"]
 
-**その他のレーティング**: [Retty, Hot Pepper Gourmet, など]
+**其他評分**: [Retty, Hot Pepper Gourmet, 等]
 
-**ガイド情報源**:
-- [URLと簡単な説明]
+**指南來源**:
+- [URL 與簡短說明]
 
-**Google口コミのパターン**:
-- [日本語レビューからのパターンまとめ]
+**Google 口コミ 模式**:
+- [日本語評論的模式整理]
 
-**繰り返し言及される長所**:
-- [複数のソースからリストアップ]
+**反覆出現的優點**:
+- [從多個來源整理]
 
-**繰り返し言及される短所**:
-- [複数のソースからリストアップ]
+**反覆出現的缺點**:
+- [從多個來源整理]
 
-**実用情報**:
+**實用資訊**:
 - reservation requirement: [required | recommended | optional | none | unknown]
-- best visiting time: [具体的な時間帯または"off-peak"など]
-- closed days: [定休日]
-- queue: [予約なしの場合の待ち時間]
+- best visiting time: [具體時間帶或 "off-peak" 等]
+- closed days: [公休日]
+- queue: [無預約時的等待時間]
 
 **Score (50-point rubric)**:
-- Taste / Quality (0–10): [点数と理由]
-- Value (0–10): [点数と理由]
-- Convenience (0–10): [点数と理由]
-- Consistency (0–10): [点数と理由]
-- Risk (0–10; 10 = low risk): [点数と理由]
-- **Total**: [合計点]/50
+- Taste / Quality (0–10): [分數與理由]
+- Value (0–10): [分數與理由]
+- Convenience (0–10): [分數與理由]
+- Consistency (0–10): [分數與理由]
+- Risk (0–10; 10 = low risk): [分數與理由]
+- **Total**: [總分]/50
