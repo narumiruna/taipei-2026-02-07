@@ -15,10 +15,33 @@
 | Moonlight Cantonese @ Courtyard Taipei | restaurant | 南港區 | 粵菜 | https://www.google.com/maps/search/?api=1&query=Moonlight+Cantonese+Courtyard+Taipei | inbox | -/50 | Tripadvisor | 現代粵菜，有包廂，適合商務宴請 |
 | 如嬌花膠雞鍋物 | restaurant | 多區域 | 火鍋 | https://www.google.com/maps/search/?api=1&query=如嬌花膠雞鍋物+台北 | inbox | -/50 | JJ.Hsu, 凱的日本食尚 | 美顏火鍋，有VIP包廂，桌邊服務 |
 | 小酌之家 | restaurant | 多區域 | 台菜 | https://www.google.com/maps/search/?api=1&query=小酌之家+台北 | inbox | -/50 | Michelin Bib Gourmand | 米其林必比登推薦，傳統台菜 |
-| 泉源閣 (Bando Club) | restaurant | 北投區 | 台菜/辦桌 | https://www.google.com/maps/search/?api=1&query=泉源閣+北投 | researching | 40/50 | Foodelicious, 晶華集團 | 精緻台菜辦桌，最大包廂可容納 20 人 |
+| 泉源閣 (Bando Club) | restaurant | 北投區 | 台菜/辦桌 | https://www.google.com/maps/search/?api=1&query=泉源閣+北投 | rejected | 40/50 | Foodelicious, 晶華集團 | 位置太遠（北投），使用者不接受（已排除） |
 | My 灶 | restaurant | 多區域 | 台菜 | https://www.google.com/maps/search/?api=1&query=My灶+台北 | inbox | -/50 | Foodelicious | 道地台菜，家常風味，有套餐 |
 | 金蓬萊 | restaurant | 多區域 | 台菜 | https://www.google.com/maps/search/?api=1&query=金蓬萊+台北 | inbox | -/50 | Foodelicious | 老字號台菜，炸排骨有名，適合宴席 |
 | 雞家莊 | restaurant | 多區域 | 台菜 | https://www.google.com/maps/search/?api=1&query=雞家莊+台北 | inbox | -/50 | Michelin Bib Gourmand | 米其林必比登，三味雞有名 |
+| 一千零一夜廚房 | restaurant | 松山區 | 波斯/中東料理 | https://www.google.com/maps/search/?api=1&query=一千零一夜廚房+台北 | inbox | -/50 | 愛食記, inline | 中東美食吃到飽，有包廂，價格實惠 |
+| Bencotto @ Mandarin Oriental | restaurant | 松山區 | 義大利菜 | https://www.google.com/maps/search/?api=1&query=Bencotto+Mandarin+Oriental+Taipei | inbox | -/50 | Tripadvisor | 頂級義大利餐廳，有包廂適合大型團體 |
+| La Farfalla @ Humble House | restaurant | 信義區 | 義大利菜 | https://www.google.com/maps/search/?api=1&query=La+Farfalla+Humble+House+Taipei | inbox | -/50 | Tripadvisor | 現代義大利料理，可容納大型團體 |
+| AGUSTO 奧古斯托義大利餐酒館 | restaurant | 內湖區 | 義大利菜 | https://www.google.com/maps/search/?api=1&query=AGUSTO+奧古斯托義大利餐酒館+台北 | inbox | -/50 | AGUSTO官網 | 有包廂，專門處理團體聚餐 |
+| GMT Italian Restaurant | restaurant | 中山區 | 義大利菜 | https://www.google.com/maps/search/?api=1&query=GMT+Italian+Restaurant+Grand+Mayfull+Taipei | inbox | -/50 | Grand Mayfull官網 | 5間包廂，可容納20人以上 |
+| 橋山壽喜燒 by 二本松 | restaurant | 多區域 | 日式壽喜燒 | https://www.google.com/maps/search/?api=1&query=橋山壽喜燒+by+二本松+台北 | inbox | -/50 | 台北聚餐包廂推薦 | 和牛壽喜燒，大包廂可容納20人 |
+| 鈺鮨 無菜單日本料理 | restaurant | 多區域 | 日本料理 | https://www.google.com/maps/search/?api=1&query=鈺鮨+無菜單日本料理+台北 | inbox | -/50 | 台北包廂餐廳推薦 | 高級壽司與懷石料理，有包廂 |
+| N°168 PRIME 敦化館 | restaurant | 大安區 | 牛排 | https://www.google.com/maps/search/?api=1&query=N168+PRIME+敦化館+台北 | inbox | -/50 | 台北大包廂推薦 | 4間大包廂最大可容納50人，熟成牛排 |
+| Ulove羽樂歐陸創意料理 | restaurant | 多區域 | 法式/西餐 | https://www.google.com/maps/search/?api=1&query=Ulove+羽樂歐陸創意料理+台北 | inbox | -/50 | 台北大包廂推薦 | 20人大包廂與影音設備，法式排餐 |
+| 海峽會 | restaurant | 多區域 | 海鮮/日法料理 | https://www.google.com/maps/search/?api=1&query=海峽會+台北 | inbox | -/50 | 台北大包廂推薦 | 25間大小包廂，容納8-52人 |
+| 長春亰華海鮮餐廳 | restaurant | 中山區 | 海鮮/桌菜 | https://www.google.com/maps/search/?api=1&query=長春亰華海鮮餐廳+台北 | inbox | -/50 | 台北包廂餐廳推薦 | 現流海鮮桌菜，包廂可彈性併桌 |
+| 晶櫻會館粵滬創意料理 | restaurant | 多區域 | 江浙/海鮮 | https://www.google.com/maps/search/?api=1&query=晶櫻會館粵滬創意料理+台北 | inbox | -/50 | 台北包廂餐廳推薦 | 多間包廂，江浙與創意海鮮合菜 |
+| 如嫣私廚職人料理 | restaurant | 多區域 | 無菜單料理 | https://www.google.com/maps/search/?api=1&query=如嫣私廚職人料理+台北 | inbox | -/50 | 台北包廂餐廳推薦 | 海鮮無菜單料理，包廂10-22人 |
+| 饗饗 INPARADISE | restaurant | 信義區 | Buffet吃到飽 | https://www.google.com/maps/search/?api=1&query=饗饗+INPARADISE+台北 | inbox | -/50 | 食尚玩家 | 微風信義46樓，高檔自助餐，有包廂 |
+| 凱菲屋 @ Grand Hyatt | restaurant | 信義區 | Buffet吃到飽 | https://www.google.com/maps/search/?api=1&query=凱菲屋+Grand+Hyatt+Taipei | inbox | -/50 | 台北吃到飽推薦 | 君悅酒店經典自助餐，有包廂 |
+| 栢麗廳 @ 晶華酒店 | restaurant | 中山區 | Buffet吃到飽 | https://www.google.com/maps/search/?api=1&query=栢麗廳+台北晶華酒店 | inbox | -/50 | 台北吃到飽推薦 | 迴轉生猛海鮮台，可預訂包廂 |
+| 美福大飯店 彩匯自助餐 | restaurant | 中山區 | Buffet吃到飽 | https://www.google.com/maps/search/?api=1&query=美福大飯店+彩匯自助餐 | inbox | -/50 | 台北吃到飽推薦 | 多個大型包廂，高品質肉類海鮮 |
+| 豐FOOD 海陸百匯 | restaurant | 中山區 | Buffet吃到飽 | https://www.google.com/maps/search/?api=1&query=豐FOOD+海陸百匯+台北 | inbox | -/50 | 食尚玩家 | 包廂可合併，適合20人以上團體 |
+| 燒肉中山 | restaurant | 信義區 | 日式燒肉 | https://www.google.com/maps/search/?api=1&query=燒肉中山+信義+台北 | inbox | -/50 | 台北燒肉推薦 | ATT 4 FUN 10樓，半開放式大包廂 |
+| 和牛47 @ 微風南山 | restaurant | 信義區 | 日式燒肉 | https://www.google.com/maps/search/?api=1&query=和牛47+微風南山 | inbox | -/50 | 台北燒肉推薦 | 47樓景觀，頂級和牛燒肉 |
+| 八和和牛燒肉專門店 | restaurant | 大安區 | 日式燒肉 | https://www.google.com/maps/search/?api=1&query=八和和牛燒肉專門店+台北 | inbox | -/50 | 愛食記 | 和牛專門，包廂10-20人 |
+| 金洹苑 KIN KAN EN | restaurant | 大安區 | 日式燒肉 | https://www.google.com/maps/search/?api=1&query=金洹苑+KIN+KAN+EN+台北 | inbox | -/50 | 愛食記 | 和牛海鮮吃到飽，有包廂組合 |
+| 發肉燒肉餐酒館 | restaurant | 多區域 | 日式燒肉 | https://www.google.com/maps/search/?api=1&query=發肉燒肉餐酒館+台北 | inbox | -/50 | 台北燒肉推薦 | 桌邊代烤，多種包廂規格 |
 
 ---
 

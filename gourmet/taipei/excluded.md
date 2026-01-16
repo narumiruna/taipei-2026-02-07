@@ -38,6 +38,23 @@
 
 ## 使用者偏好排除（User Preference Exclusion）
 
+### 泉源閣 Bando Club（台菜/辦桌）
+- **排除日期**: 2026-01-16
+- **排除理由**: 位置太遠（北投區），使用者明確表示不接受
+- **原始評分**: 40/50（高分）
+- **Google Maps**: https://www.google.com/maps/search/?api=1&query=泉源閣+Bando+Club+北投
+- **來源**:
+  - Foodelicious: https://globalfoodelicious.com/bando-club-taipei/
+  - 阿朱的日常: https://achu.tw/bandoclub/
+  - inline 訂位: https://inline.app/booking/-O1RVEBwXIxxxSEBmTd-:inline-live-3/-O1RVEQ039QY2lhZw2Ma?language=zh-tw
+- **備註**:
+  - 晶華集團經營，全包廂設計
+  - 最大包廂可容納約 20 人
+  - 總舖師烤鴨六吃極受好評
+  - 包廂低消 NT$25,000-70,000
+  - 位於北投區（捷運新北投站），距市中心較遠
+  - **雖評分與條件優異，但因地理位置不符使用者偏好而排除**
+
 ### 海底撈火鍋（火鍋）
 - **排除日期**: 2026-01-16
 - **排除理由**: 中國品牌，使用者明確表示不接受
