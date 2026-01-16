@@ -1018,34 +1018,23 @@ consistent reviews indicate reliable experience
 - Score 30-34 with red flags: May exclude despite score
 
 **Hard exclusion triggers** (override score):
-1. **Tourist trap**: Multi-source evidence of targeting tourists with inflated prices/quality
-2. **Safety/hygiene**: Multiple complaints about food safety or cleanliness
-3. **Service**: Consistent severe service issues (rude staff, frequent errors)
-4. **Practical**: Location truly inaccessible or always closed during the visit window
+1. **Tourist trap**: Multi-source evidence of inflated prices/quality
+2. **Safety/hygiene**: Multiple food safety/cleanliness complaints
+3. **Service**: Consistent severe service issues
+4. **Practical**: Inaccessible location or always closed during visit
 
 ### Human Override Conditions
 
-**Human reviewer may override automated decisions when**:
+**Human reviewer may override when**:
 
-1. **Strategic considerations**:
-   - Need geographic coverage in underserved area
-   - Need cuisine diversity (e.g., only hot pot option in Taipei)
-   - Historical/cultural significance beyond food quality
+1. **Strategic**: Geographic/cuisine coverage needs, historical/cultural significance
+2. **Context not in rubric**: Unique experience, once-in-lifetime opportunity, trusted recommendation
+3. **Edge cases**: Conflicting evidence, new establishment with promise, legendary place debate
 
-2. **Context not captured in rubric**:
-   - Unique experience worth the risk/inconvenience
-   - Once-in-lifetime opportunity (e.g., seasonal specialty)
-   - Strong personal recommendation from trusted source
-
-3. **Edge cases**:
-   - Conflicting evidence makes scoring difficult
-   - New establishment with limited reviews but strong promise
-   - Legendary place with declining quality (historical value debate)
-
-**Override documentation requirement**:
+**Override documentation**:
 ```markdown
-**Human override**: [Decision made]
-**Reason**: [Detailed justification]
+**Human override**: [Decision]
+**Reason**: [Justification]
 **Date**: YYYY-MM-DD
 **Reviewer**: [Name/ID]
 ```
@@ -1054,30 +1043,12 @@ consistent reviews indicate reliable experience
 
 **Every decision must be documented**:
 
-1. **Candidates promoted to Top Pick/Backup**:
-   - Score with breakdown
-   - Evidence summary
-   - Practical constraints
-   - Justification if borderline
+1. **Promoted (Top Pick/Backup)**: Score breakdown, evidence, constraints, justification if borderline
+2. **Rejected**: Score (if calculated), exclusion reason, evidence, entry in excluded.md
+3. **Deprioritized** (not researched): Reason, entry in excluded.md under "Not Researched Further"
+4. **Human overrides**: Original score/decision, override, justification, date, reviewer
 
-2. **Candidates rejected**:
-   - Score (if calculated)
-   - Exclusion reason category
-   - Supporting evidence
-   - Entry in excluded.md
-
-3. **Candidates deprioritized** (not researched):
-   - Reason for deprioritization
-   - Entry in excluded.md under "Not Researched Further"
-   - Brief explanation (e.g., "lower priority", "enough alternatives")
-
-4. **Human overrides**:
-   - Original score/decision
-   - Override decision
-   - Detailed justification
-   - Date and reviewer
-
-**Traceability requirement**: Every decision must be traceable back to documented evidence or explicit human judgment.
+**Traceability**: Every decision traceable to documented evidence or explicit judgment.
 
 ---
 
@@ -1085,34 +1056,19 @@ consistent reviews indicate reliable experience
 
 ### Definition of Done
 
-**Taipei is marked "✅ Completed" when ALL of the following are met:**
+**Taipei marked "✅ Completed" when ALL met:**
 
-1. **All candidates triaged**:
-   - No `status: inbox` entries in candidates.md
-   - Every candidate has either a score or rejection reason
-
-2. **No pending decisions**:
-   - excluded.md has no "TODO" or "pending review" items
-   - All exclusion reasons documented
-
-3. **top-places.md finalized**:
-   - Top Picks section complete (score ≥35)
-   - Backups section complete (score 30-34)
-   - Dining Strategy section complete
-   - To-Do section present (trip execution, not research)
-
-4. **overview.md checklist complete**:
-   - Research completion checklist fully marked `[x]`
-   - Note: This is different from To-Do in top-places.md
+1. **All candidates triaged**: No `status: inbox` in candidates.md; all scored or excluded
+2. **No pending decisions**: excluded.md has no "TODO"/"pending"; all reasons documented
+3. **top-places.md finalized**: Top Picks (≥35), Backups (30-34), Dining Strategy, To-Do complete
+4. **overview.md checklist complete**: Research completion checklist fully `[x]`
 
 ### Checklist Distinction
-
-**Two separate checklists with different purposes:**
 
 | Checklist | Purpose | Location | Completion Rule |
 |-----------|---------|----------|----------------|
 | **Research Completion** | Track research progress | overview.md | MUST be 100% `[x]` for ✅ |
-| **Trip Execution** | Track trip planning tasks | top-places.md To-Do | MAY have `[ ]` when research complete |
+| **Trip Execution** | Track trip planning | top-places.md To-Do | MAY have `[ ]` when research complete |
 
 **Critical**: Only Research Completion checklist determines "✅ Completed" status.
 
@@ -1161,62 +1117,25 @@ grep "\- \[ \]" gourmet/taipei/overview.md
 
 **Every research action must leave a trace**:
 
-1. **Candidate addition**:
-   - Entry in candidates.md with timestamp (in commit)
-   - Initial `status: inbox`
-
-2. **Research conducted**:
-   - Evidence section in notes.md
-   - Source URLs with access dates
-   - `status` updated to `researching`
-
-3. **Scoring**:
-   - Score breakdown in notes.md
-   - Total score in candidates.md
-   - Justification for each component
-
-4. **Triage decision**:
-   - `status` updated to `shortlisted`, `top`, or `rejected`
-   - If rejected: entry in excluded.md with reason
-   - If promoted: entry in top-places.md
-
-5. **Changes after initial decision**:
-   - Document reason for change
-   - Update all affected files
-   - Note in commit message
+1. **Candidate addition**: Entry in candidates.md (timestamped in commit), `status: inbox`
+2. **Research conducted**: Evidence in notes.md with URLs/dates, `status: researching`
+3. **Scoring**: Breakdown in notes.md, total in candidates.md, justification for each component
+4. **Triage decision**: Status updated (`shortlisted`/`top`/`rejected`); if rejected, entry in excluded.md
+5. **Changes**: Document reason, update files, note in commit
 
 **Preservation rules**:
-- ❌ NEVER delete candidates from candidates.md
-- ❌ NEVER remove evidence from notes.md
-- ❌ NEVER hide exclusion reasons
-- ✅ Mark as rejected and document reason instead
-- ✅ Preserve historical scores if recalculated (note change)
+- ❌ NEVER delete candidates, evidence, or exclusion reasons
+- ✅ Mark as rejected and document; preserve historical scores if recalculated
 
 ### Maintenance Procedures
 
-**Regular maintenance tasks**:
+**Regular maintenance**:
 
-1. **Weekly** (during active research):
-   - Update PROGRESS.md with current status
-   - Sync README.md progress table
-   - Review pending inbox items
+1. **Weekly** (active research): Update PROGRESS.md, sync README.md, review inbox
+2. **Per city completion**: Run verification, update status, document completion date
+3. **Pre-trip**: Verify hours, confirm seasonal availability, update closures
 
-2. **Per city completion**:
-   - Run verification commands
-   - Update status to ✅ only if all criteria met
-   - Document completion date
-
-3. **Pre-trip** (closer to trip start date):
-   - Verify restaurant hours haven't changed
-   - Confirm seasonal availability (岩牡蠣, etc.)
-   - Update any closed/relocated establishments
-   - Mark outdated information
-
-**Version control discipline**:
-- Commit after each meaningful unit of work
-- Use descriptive commit messages
-- Reference issue/task numbers if applicable
-- Keep commits focused (one logical change)
+**Version control**: Commit meaningful units of work with descriptive messages
 
 ### Quality Assurance
 
@@ -1230,26 +1149,13 @@ grep "\- \[ \]" gourmet/taipei/overview.md
 - [ ] All verification commands pass
 - [ ] PROGRESS.md and README.md updated
 
-**Peer review focus areas**:
-- Score consistency across candidates
-- Evidence quality and sufficiency
-- Exclusion reason clarity
-- Missing categories or geographic gaps
-- Practical constraint accuracy
+**Peer review focus areas**: Score consistency, evidence quality, exclusion clarity, category coverage, practical accuracy
 
 ### Continuous Improvement
 
-**Learning capture**:
-- Document efficiency improvements in this file
-- Note common research patterns
-- Record pitfalls to avoid
-- Update workflow if process improved
+**Learning capture**: Document improvements, patterns, pitfalls in this file
 
-**Feedback incorporation**:
-- Track human override patterns
-- Adjust scoring if systematic bias found
-- Refine rubric if consistently ambiguous
-- Update source requirements if gaps identified
+**Feedback incorporation**: Track overrides, adjust scoring for bias, refine ambiguous rubric, update source requirements
 
 ---
 
