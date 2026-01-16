@@ -182,49 +182,26 @@ gourmet/
 
 #### 1. overview.md
 **Purpose**: Quick orientation and research strategy  
-**Audience**: New researchers, project managers  
-**Reading time**: 5 minutes  
-**Contains**:
-- Travel context and group constraints
-- Taipei-specific food highlights (e.g., a local noodle specialty)
-- Research strategy and priorities
-- Progress checklist (research completion tracking)
-- Important constraints (holidays, hours, transportation)
+**Contains**: Travel context, group constraints, food highlights, research strategy, progress checklist
 
 **Update trigger**: Project start, strategy changes, completion milestones
 
 #### 2. inbox.md
 **Purpose**: Temporary holding area for unresearched candidates  
-**Audience**: Researchers prioritizing work, avoiding duplicates  
-**Reading time**: 2-5 minutes  
-**Contains**:
-- Simple list of restaurant names and basic info
-- Minimal structure (name, area, type, source)
-- No scores, no detailed research yet
-- Quick-add format to prevent losing candidates
-
-**Update trigger**: New candidate discovered, candidate moved to research pipeline
+**Contains**: Simple list (name, area, type, source), no scores
 
 **Workflow**:
-- **Add here first** when discovering new candidates
-- Move to candidates.md when starting detailed research
-- Prevents candidates from being forgotten
-- Enables batch prioritization
+- Add here first when discovering candidates
+- Move to candidates.md when starting research
+- Remove from inbox after migration
 
-**Migration rule**: Once a candidate moves to candidates.md with `status: researching`, remove from inbox.md to avoid duplication.
+**Migration rule**: Once moved to candidates.md with `status: researching`, remove from inbox.md.
 
 #### 3. candidates.md
 **Purpose**: Complete candidate inventory with status and scores  
-**Audience**: Researchers scanning all options, comparing scores  
-**Reading time**: 10 minutes (table scan)  
-**Contains**:
-- Structured table with all candidates
-- Required columns: name, category, area, type, google_maps_url, status, score, sources, notes
-- Brief summary only (details in notes.md)
+**Contains**: Structured table with columns: name, category, area, type, google_maps_url, status, score, sources, notes
 
-**Update trigger**: New candidate discovered, status change, score assigned
-
-**Preservation rule**: NEVER delete entries unless duplicate, incorrect, or permanently closed. Use `status: rejected` and document in excluded.md instead.
+**Preservation rule**: NEVER delete entries. Use `status: rejected` and document in excluded.md instead.
 
 **Status values**:
 - `researching`: Active research in progress
@@ -232,43 +209,19 @@ gourmet/
 - `top`: Promoted to Top Picks
 - `rejected`: Excluded with reason in excluded.md
 
-**Note**: `inbox` status is NOT used in candidates.md. Unresearched candidates stay in inbox.md until research begins.
+**Note**: Unresearched candidates stay in inbox.md until research begins.
 
 #### 4. notes.md
 **Purpose**: Detailed evidence trail and scoring justification  
-**Audience**: Deep researchers, auditors, score validators  
-**Reading time**: Variable (by section)  
-**Contains**:
-- Evidence sections per candidate (sources, ratings, reviews)
-- Scoring breakdown with rationale
-- Practical information (reservations, queues, hours)
-- Source URLs with access dates
-
-**Update trigger**: New evidence collected, score calculated, practical info discovered
+**Contains**: Evidence sections per candidate (sources, ratings, reviews), scoring breakdown, practical information
 
 #### 5. excluded.md
 **Purpose**: Audit trail for rejected candidates  
-**Audience**: Auditors, researchers avoiding duplicate work  
-**Reading time**: 5-10 minutes  
-**Contains**:
-- Categorized exclusion reasons
-- Brief explanation per excluded place
-- Source references supporting exclusion
-- Date of exclusion decision
-
-**Update trigger**: Candidate rejected, exclusion reason documented
+**Contains**: Categorized exclusion reasons, source references, decision dates
 
 #### 6. top-places.md
 **Purpose**: Actionable final recommendations  
-**Audience**: Travelers making reservations, day planners  
-**Reading time**: 10-15 minutes  
-**Contains**:
-- Top Picks (score ≥35) in descending score order
-- Backups (score 30-34) in descending score order
-- Dining Strategy (timing, reservations, budget, transportation)
-- To-Do (trip execution checklist - NOT research completion)
-
-**Update trigger**: Candidate promoted to Top Pick/Backup, strategy finalized, completion
+**Contains**: Top Picks (≥35), Backups (30-34), Dining Strategy, To-Do (trip execution)
 
 ### Progressive Disclosure Principle
 
@@ -314,60 +267,27 @@ excluded.md → [reason] → (Optional) notes.md for details
 
 **Location**: `templates/` directory at repository root
 
-**Purpose**: Provide standardized starting points for creating city-specific research documentation.
+**Purpose**: Standardized starting points for city-specific research documentation.
 
-**Available Templates**:
+**Available Templates** (6 files):
 
-The `templates/` directory contains markdown templates for all six required files:
-
-1. **overview.md** - City food strategy and progress tracker
-   - Travel information template (dates, accommodation, attractions)
-   - Food highlights section (local dishes and specialties)
-   - Research strategy template (priorities and constraints)
-   - Progress checklist template (research completion tracking)
-
+1. **overview.md** - City strategy, progress tracker
 2. **inbox.md** - Unresearched candidates holding area
-   - Simple list format for quick candidate addition
-   - Basic fields: name, area, type, source
-   - No scores or detailed research required
-   - Easy batch prioritization
-
-3. **candidates.md** - Candidate restaurants table
-   - Pre-structured table with all required columns
-   - Status value examples (researching | shortlisted | rejected | top)
-   - Placeholder rows showing expected format
-   - Note: Does NOT include "inbox" status (use inbox.md for that)
-
-4. **notes.md** - Detailed evidence and research notes
-   - Evidence collection template with all required sources
-   - 50-point scoring rubric breakdown structure
-   - Practical information fields (reservation, hours, closed days)
-   - Review patterns and pros/cons sections
-
-5. **top-places.md** - Final recommendation list
-   - Top Picks section template (35+ points)
-   - Backups section template (30-34 points)
-   - Researching section template
-   - Dining Strategy template (time planning, reservations, budget, access)
-   - To-Do section template (trip execution checklist)
-
-6. **excluded.md** - Excluded places documentation
-   - Lower priority candidates section
-   - Not researched further section
-   - Exclusion reason categories (Tourist Trap, Low Score, Service Issues, etc.)
+3. **candidates.md** - Structured table with all required columns
+4. **notes.md** - Evidence collection and scoring breakdown
+5. **top-places.md** - Final recommendations and dining strategy
+6. **excluded.md** - Rejected candidates with reasons
 
 **Usage**:
 
-When starting research for a new city:
-1. Create new directory: `gourmet/[cityname]/`
-2. Copy all 6 templates from `templates/` to `gourmet/taipei/`
-3. Start with `overview.md` to establish context and strategy
-4. Use `inbox.md` to quickly collect candidate names as you discover them
-5. Move candidates from inbox.md to candidates.md when starting detailed research
-6. Replace placeholder text (marked with `[brackets]`) with actual content
-7. Follow the six-stage research workflow (see below)
+1. Create directory: `gourmet/[cityname]/`
+2. Copy all 6 templates from `templates/`
+3. Start with `overview.md` for context
+4. Add discoveries to `inbox.md`
+5. Move to `candidates.md` when starting detailed research
+6. Replace placeholder text (marked with `[brackets]`)
 
-**Template Reference**: See `templates/README.md` for detailed usage instructions and examples.
+**Reference**: See `templates/README.md` for detailed instructions.
 
 ---
 
@@ -783,11 +703,7 @@ Stage 6: Completion    → Verify and document completion
 
 ### Source Quality Standards
 
-**URL requirements**:
-- Include actual URLs (not "see website")
-- Verify links are accessible
-- Note if behind paywall or login
-- Document access date for time-sensitive info
+**URL requirements**: Include actual URLs, verify accessible, note paywall/login, document access date
 
 **Citation format**:
 ```markdown
@@ -796,92 +712,46 @@ Stage 6: Completion    → Verify and document completion
 - Accessed: YYYY-MM-DD
 ```
 
-**Source reliability assessment**:
-- Prefer sources with large review counts (100+ reviews)
-- Cross-reference claims across 3+ sources
-- Flag sources that are outliers
-- Note if source is outdated (>2 years old)
+**Reliability**: Prefer 100+ reviews, cross-reference 3+ sources, flag outliers, note if >2 years old
 
 ### Conflict Handling
 
 **When sources disagree**:
 
-1. **Document the conflict explicitly**:
-   ```markdown
-   **Conflict noted**: 
-   - Source A claims: [X]
-   - Source B claims: [Y]
-   - Source C claims: [X]
-   ```
+1. **Document conflict explicitly**: Note all claims with sources
+2. **Resolution strategy**: Use majority consensus, recency, detail level, or review count/authority
+3. **When unresolvable**: Mark `unknown`/`conflicting`, document both sides, flag for review
 
-2. **Resolution strategy**:
-   - Majority consensus: Use most common finding
-   - Recency: Prefer more recent information
-   - Detail: Prefer source with more specific detail
-   - Scale: Weight by review count/authority
-
-3. **When unresolvable**:
-   - Mark as `unknown` or `conflicting`
-   - Document both sides
-   - Flag for human review
-   - Note in scoring rationale
-
-**Common conflict types**:
-- Hours of operation (check official website first)
-- Reservation requirements (call restaurant if critical)
-- Price ranges (use most recent, note inflation)
-- Service quality (look for trend over time)
+**Common conflicts**: Hours (check official site), reservations (call if critical), prices (use recent), service (look for trends)
 
 ### Uncertainty Documentation
 
-**Mark information as uncertain when**:
-- Only one source provides the information
-- Sources conflict without clear resolution
-- Information is outdated (>1 year for restaurants)
-- Seasonal variation possible
+**Mark uncertain when**: Single source only, unresolved conflict, outdated (>1 year), seasonal variation
 
-**Uncertainty labels**:
-- `unknown`: No reliable source found
-- `conflicting`: Sources disagree, no clear resolution
-- `unverified`: Single source only, not confirmed
-- `seasonal`: May vary by season (note which season)
-- `outdated`: Based on old information (note date)
+**Labels**: `unknown`, `conflicting`, `unverified`, `seasonal`, `outdated`
 
 **Example**:
 ```markdown
 **Practical**:
 - reservation requirement: required (per Tabelog, unverified on official site)
 - best visiting time: conflicting (some say lunch, some say dinner)
-- closed days: unknown (no clear information)
-- queue: 30-60 min (based on 2024 reviews, may be outdated)
+- closed days: unknown
+- queue: 30-60 min (2024 reviews, may be outdated)
 ```
 
 ### Seasonality Considerations
 
 **Seasonal factors to document**:
 
-1. **Ingredients** (especially seafood):
-   - Spiny lobster (local specialty): Peak season October-April
-   - 岩牡蠣 (rock oysters): Peak season June-August
-   - 的矢かき (Matoya oysters): Year-round but best winter
-   - Note: Trip is late September, transitioning seasons
-
-2. **Tourist volume**:
-   - Peak season (Golden Week, summer, New Year)
-   - Off-peak (January-February, September)
-   - Trip timing: Late September = transitional (moderate crowds)
-
-3. **Operating hours/closures**:
-   - Summer-only items (赤福氷)
-   - Winter-only items (赤福ぜんざい)
-   - Monthly specials (朔日餅 - 1st of month only)
-   - Irregular closures for holidays
+1. **Ingredients**: Note peak seasons for key ingredients (seafood, produce)
+2. **Tourist volume**: Peak vs off-peak seasons affecting availability
+3. **Operating hours/closures**: Seasonal menu items, holiday closures
 
 **Documentation requirement**:
 ```markdown
 **Seasonal notes**:
 - Best visit season: [season] because [reason]
-- Trip timing (Sept 25-Oct 4): [適切/注意が必要/オフシーズン]
+- Trip timing: [date range] = [適切/注意が必要/オフシーズン]
 - Seasonal considerations: [specific factors]
 ```
 
@@ -953,12 +823,6 @@ reviews consistently praise 備長炭焼き technique
 - Google Maps price level (¥/¥¥/¥¥¥/¥¥¥¥)
 - Review mentions of portions or value
 - Comparison to similar establishments
-
-**Price bands** (rough guide for Japanese dining):
-- Budget: <¥1,000
-- Moderate: ¥1,000-3,000
-- Upscale: ¥3,000-10,000
-- Fine dining: ¥10,000+
 
 **Example scoring**:
 ```
@@ -1070,27 +934,12 @@ consistent reviews indicate reliable experience
 
 ### Scoring Consistency Rules
 
-**To maintain consistency across candidates**:
+**Maintain consistency**:
 
-1. **Score relative to category**:
-   - Compare restaurants within similar price bands or styles
-   - Don't penalize casual places for not being fine dining
-   - Adjust expectations by price band
-
-2. **Document edge cases**:
-   - Note when scoring difficult or borderline
-   - Flag for human review if uncertain
-   - Explain unusual scores in rationale
-
-3. **Avoid score inflation**:
-   - Not every place can be 40+
-   - Reserve 9-10 components for truly exceptional
-   - A score of 35-38 is still very good
-
-4. **Justify every component**:
-   - Every 0-10 score must cite specific evidence
-   - No scores without documented rationale
-   - Refer to evidence section in notes.md
+1. **Score relative to category**: Compare within price bands/styles; adjust expectations accordingly
+2. **Document edge cases**: Note difficult scoring; flag for review; explain unusual scores
+3. **Avoid inflation**: Reserve 9-10 for truly exceptional; 35-38 is very good
+4. **Justify components**: Cite specific evidence for every score; refer to notes.md
 
 ---
 
@@ -1117,34 +966,23 @@ consistent reviews indicate reliable experience
 - Score 30-34 with red flags: May exclude despite score
 
 **Hard exclusion triggers** (override score):
-1. **Tourist trap**: Multi-source evidence of targeting tourists with inflated prices/quality
-2. **Safety/hygiene**: Multiple complaints about food safety or cleanliness
-3. **Service**: Consistent severe service issues (rude staff, frequent errors)
-4. **Practical**: Location truly inaccessible or always closed during the visit window
+1. **Tourist trap**: Multi-source evidence of inflated prices/quality
+2. **Safety/hygiene**: Multiple food safety/cleanliness complaints
+3. **Service**: Consistent severe service issues
+4. **Practical**: Inaccessible location or always closed during visit
 
 ### Human Override Conditions
 
-**Human reviewer may override automated decisions when**:
+**Human reviewer may override when**:
 
-1. **Strategic considerations**:
-   - Need geographic coverage in underserved area
-   - Need cuisine diversity (e.g., only hot pot option in Taipei)
-   - Historical/cultural significance beyond food quality
+1. **Strategic**: Geographic/cuisine coverage needs, historical/cultural significance
+2. **Context not in rubric**: Unique experience, once-in-lifetime opportunity, trusted recommendation
+3. **Edge cases**: Conflicting evidence, new establishment with promise, legendary place debate
 
-2. **Context not captured in rubric**:
-   - Unique experience worth the risk/inconvenience
-   - Once-in-lifetime opportunity (e.g., seasonal specialty)
-   - Strong personal recommendation from trusted source
-
-3. **Edge cases**:
-   - Conflicting evidence makes scoring difficult
-   - New establishment with limited reviews but strong promise
-   - Legendary place with declining quality (historical value debate)
-
-**Override documentation requirement**:
+**Override documentation**:
 ```markdown
-**Human override**: [Decision made]
-**Reason**: [Detailed justification]
+**Human override**: [Decision]
+**Reason**: [Justification]
 **Date**: YYYY-MM-DD
 **Reviewer**: [Name/ID]
 ```
@@ -1153,30 +991,12 @@ consistent reviews indicate reliable experience
 
 **Every decision must be documented**:
 
-1. **Candidates promoted to Top Pick/Backup**:
-   - Score with breakdown
-   - Evidence summary
-   - Practical constraints
-   - Justification if borderline
+1. **Promoted (Top Pick/Backup)**: Score breakdown, evidence, constraints, justification if borderline
+2. **Rejected**: Score (if calculated), exclusion reason, evidence, entry in excluded.md
+3. **Deprioritized** (not researched): Reason, entry in excluded.md under "Not Researched Further"
+4. **Human overrides**: Original score/decision, override, justification, date, reviewer
 
-2. **Candidates rejected**:
-   - Score (if calculated)
-   - Exclusion reason category
-   - Supporting evidence
-   - Entry in excluded.md
-
-3. **Candidates deprioritized** (not researched):
-   - Reason for deprioritization
-   - Entry in excluded.md under "Not Researched Further"
-   - Brief explanation (e.g., "lower priority", "enough alternatives")
-
-4. **Human overrides**:
-   - Original score/decision
-   - Override decision
-   - Detailed justification
-   - Date and reviewer
-
-**Traceability requirement**: Every decision must be traceable back to documented evidence or explicit human judgment.
+**Traceability**: Every decision traceable to documented evidence or explicit judgment.
 
 ---
 
@@ -1184,34 +1004,19 @@ consistent reviews indicate reliable experience
 
 ### Definition of Done
 
-**Taipei is marked "✅ Completed" when ALL of the following are met:**
+**Taipei marked "✅ Completed" when ALL met:**
 
-1. **All candidates triaged**:
-   - No `status: inbox` entries in candidates.md
-   - Every candidate has either a score or rejection reason
-
-2. **No pending decisions**:
-   - excluded.md has no "TODO" or "pending review" items
-   - All exclusion reasons documented
-
-3. **top-places.md finalized**:
-   - Top Picks section complete (score ≥35)
-   - Backups section complete (score 30-34)
-   - Dining Strategy section complete
-   - To-Do section present (trip execution, not research)
-
-4. **overview.md checklist complete**:
-   - Research completion checklist fully marked `[x]`
-   - Note: This is different from To-Do in top-places.md
+1. **All candidates triaged**: No `status: inbox` in candidates.md; all scored or excluded
+2. **No pending decisions**: excluded.md has no "TODO"/"pending"; all reasons documented
+3. **top-places.md finalized**: Top Picks (≥35), Backups (30-34), Dining Strategy, To-Do complete
+4. **overview.md checklist complete**: Research completion checklist fully `[x]`
 
 ### Checklist Distinction
-
-**Two separate checklists with different purposes:**
 
 | Checklist | Purpose | Location | Completion Rule |
 |-----------|---------|----------|----------------|
 | **Research Completion** | Track research progress | overview.md | MUST be 100% `[x]` for ✅ |
-| **Trip Execution** | Track trip planning tasks | top-places.md To-Do | MAY have `[ ]` when research complete |
+| **Trip Execution** | Track trip planning | top-places.md To-Do | MAY have `[ ]` when research complete |
 
 **Critical**: Only Research Completion checklist determines "✅ Completed" status.
 
@@ -1260,98 +1065,45 @@ grep "\- \[ \]" gourmet/taipei/overview.md
 
 **Every research action must leave a trace**:
 
-1. **Candidate addition**:
-   - Entry in candidates.md with timestamp (in commit)
-   - Initial `status: inbox`
-
-2. **Research conducted**:
-   - Evidence section in notes.md
-   - Source URLs with access dates
-   - `status` updated to `researching`
-
-3. **Scoring**:
-   - Score breakdown in notes.md
-   - Total score in candidates.md
-   - Justification for each component
-
-4. **Triage decision**:
-   - `status` updated to `shortlisted`, `top`, or `rejected`
-   - If rejected: entry in excluded.md with reason
-   - If promoted: entry in top-places.md
-
-5. **Changes after initial decision**:
-   - Document reason for change
-   - Update all affected files
-   - Note in commit message
+1. **Candidate addition**: Entry in candidates.md (timestamped in commit), `status: inbox`
+2. **Research conducted**: Evidence in notes.md with URLs/dates, `status: researching`
+3. **Scoring**: Breakdown in notes.md, total in candidates.md, justification for each component
+4. **Triage decision**: Status updated (`shortlisted`/`top`/`rejected`); if rejected, entry in excluded.md
+5. **Changes**: Document reason, update files, note in commit
 
 **Preservation rules**:
-- ❌ NEVER delete candidates from candidates.md
-- ❌ NEVER remove evidence from notes.md
-- ❌ NEVER hide exclusion reasons
-- ✅ Mark as rejected and document reason instead
-- ✅ Preserve historical scores if recalculated (note change)
+- ❌ NEVER delete candidates, evidence, or exclusion reasons
+- ✅ Mark as rejected and document; preserve historical scores if recalculated
 
 ### Maintenance Procedures
 
-**Regular maintenance tasks**:
+**Regular maintenance**:
 
-1. **Weekly** (during active research):
-   - Update PROGRESS.md with current status
-   - Sync README.md progress table
-   - Review pending inbox items
+1. **Weekly** (active research): Update PROGRESS.md, sync README.md, review inbox
+2. **Per city completion**: Run verification, update status, document completion date
+3. **Pre-trip**: Verify hours, confirm seasonal availability, update closures
 
-2. **Per city completion**:
-   - Run verification commands
-   - Update status to ✅ only if all criteria met
-   - Document completion date
-
-3. **Pre-trip** (closer to trip start date):
-   - Verify restaurant hours haven't changed
-   - Confirm seasonal availability (岩牡蠣, etc.)
-   - Update any closed/relocated establishments
-   - Mark outdated information
-
-**Version control discipline**:
-- Commit after each meaningful unit of work
-- Use descriptive commit messages
-- Reference issue/task numbers if applicable
-- Keep commits focused (one logical change)
+**Version control**: Commit meaningful units of work with descriptive messages
 
 ### Quality Assurance
 
 **Self-review checklist before marking complete**:
 
-- [ ] All candidates have scores or exclusion reasons
-- [ ] Every score has documented justification
+- [ ] All candidates scored or excluded with documented reasons
 - [ ] All sources have working URLs
-- [ ] No unsupported claims or fabricated data
-- [ ] Conflicts documented and resolved
-- [ ] Uncertainty explicitly marked
-- [ ] top-places.md has all required sections
-- [ ] Dining Strategy is practical and complete
+- [ ] No fabricated data; conflicts resolved; uncertainty marked
+- [ ] top-places.md complete with all sections
+- [ ] Dining Strategy practical and complete
 - [ ] All verification commands pass
 - [ ] PROGRESS.md and README.md updated
 
-**Peer review focus areas**:
-- Score consistency across candidates
-- Evidence quality and sufficiency
-- Exclusion reason clarity
-- Missing categories or geographic gaps
-- Practical constraint accuracy
+**Peer review focus areas**: Score consistency, evidence quality, exclusion clarity, category coverage, practical accuracy
 
 ### Continuous Improvement
 
-**Learning capture**:
-- Document efficiency improvements in this file
-- Note common research patterns
-- Record pitfalls to avoid
-- Update workflow if process improved
+**Learning capture**: Document improvements, patterns, pitfalls in this file
 
-**Feedback incorporation**:
-- Track human override patterns
-- Adjust scoring if systematic bias found
-- Refine rubric if consistently ambiguous
-- Update source requirements if gaps identified
+**Feedback incorporation**: Track overrides, adjust scoring for bias, refine ambiguous rubric, update source requirements
 
 ---
 
@@ -1359,13 +1111,13 @@ grep "\- \[ \]" gourmet/taipei/overview.md
 
 ### Efficient Research Tactics
 
-1. **Start with overview.md**: Provides context for all subsequent work
+1. **Start with overview.md** for context
 2. **Batch web searches**: Gather 20+ candidates in 3-4 searches
 3. **Prioritize ruthlessly**: Research top 3-5 first, expand if needed
 4. **Use comprehensive queries**: "[Place] [City] 食べログ 予約 口コミ" yields most info
-5. **Document as you go**: Incremental updates prevent information loss
+5. **Document incrementally**: Prevent information loss
 
-**Time estimates** (for planning):
+**Time estimates**:
 - Overview + candidate collection: 30 minutes
 - Detailed research per place: 15-20 minutes
 - Scoring per place: 5-10 minutes
@@ -1375,56 +1127,51 @@ grep "\- \[ \]" gourmet/taipei/overview.md
 ### Pattern Recognition
 
 **Tourist trap signals**:
-- Only located near major attractions
-- Overly generic positive reviews
-- No mention of Japanese locals in reviews
+- Located only near major attractions
+- Generic positive reviews; no local mentions
 - Price significantly higher than similar places
 
 **Authentic signals**:
 - High Tabelog ratings from verified locals
-- Mixed tourist/local clientele
-- Family-owned, long history
+- Mixed tourist/local clientele; family-owned
 - Specific dishes praised repeatedly
 - Reservation difficulty (genuine popularity)
 
 **Red flags**:
-- Inconsistent service complaints (>20% of reviews)
-- Hygiene issues mentioned multiple times
-- Closed unexpectedly/irregular hours
-- Conflicting information across sources
+- Service complaints (>20% of reviews)
+- Multiple hygiene issues
+- Irregular hours; conflicting information
 
 **Green flags**:
-- Michelin recognition or 百名店 award
+- Michelin/百名店 recognition
 - Tabelog 3.8+ with 500+ reviews
-- Specific technique or ingredient praised
-- Consistent experience across years
+- Specific technique/ingredient praised
+- Consistent experience over time
 
 ### Common Pitfalls
 
 **Avoid these mistakes**:
 
-1. **Research sprawl**: Don't try to research everything at once
-2. **Skipping overview.md**: Context is essential for prioritization
+1. **Research sprawl**: Focus on prioritized candidates, not everything at once
+2. **Skipping overview.md**: Context essential for prioritization
 3. **Single-source reliance**: Always cross-reference 4+ sources
-4. **Ignoring practical constraints**: Reservation policies, closed days, queues matter
-5. **Score inflation**: Not everything can be 40+; 35-38 is still excellent
-6. **Geographic clustering**: Ensure coverage across different neighborhoods
-7. **Format imbalance**: Need mix of casual and special occasion options
-8. **Deleting instead of documenting**: Preserve audit trail via excluded.md
+4. **Ignoring constraints**: Reservation policies, closed days, queues matter
+5. **Score inflation**: Reserve 9-10 scores for truly exceptional; 35-38 is excellent
+6. **Poor coverage**: Ensure geographic spread and format variety (casual/upscale)
+7. **Deleting records**: Use excluded.md to preserve audit trail
 
 ### Research Quality Checklist
 
 **Before finalizing any candidate, verify**:
 
-- ✓ Exact rating and review count on Google Maps and Tabelog
-- ✓ Patterns from Google口コミ (Japanese reviews)
+- ✓ Exact ratings and review counts (Google Maps, Tabelog)
+- ✓ Patterns from Japanese reviews (Google口コミ)
 - ✓ Signature dishes identified
-- ✓ Reservation requirements clear
-- ✓ Closed days confirmed
-- ✓ Expected wait time documented (if no reservation)
-- ✓ Price range from Tabelog (夜予算/昼予算)
-- ✓ Most common complaints noted
-- ✓ Tourist vs local clientele assessed
+- ✓ Reservation requirements and closed days confirmed
+- ✓ Wait time documented (if no reservation)
+- ✓ Price range verified (Tabelog 夜予算/昼予算)
+- ✓ Common complaints noted
+- ✓ Clientele assessed (tourist vs local)
 - ✓ Seasonal considerations documented (if applicable)
 
 ---
