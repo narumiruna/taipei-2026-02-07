@@ -466,6 +466,7 @@ Stage 6: Completion    → Verify and document completion
    - best visiting time: [specific times or "off-peak"]
    - closed days: [day of week or "irregular"]
    - queue: [expected wait time or "none"]
+   - group capacity: [if researching for large groups, specify max capacity and private room availability]
    ```
 
 3. **Update candidates.md**:
