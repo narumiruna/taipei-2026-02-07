@@ -9,7 +9,7 @@
 | 二本松涮涮屋 | restaurant | 大安區 | 火鍋 | https://www.google.com/maps/search/?api=1&query=二本松涮涮屋+台北 | inbox | -/50 | JJ.Hsu, 凱的日本食尚 | 被譽為火鍋界PRADA，包廂最多10人（不符需求） |
 | 橘色涮涮屋 | restaurant | 大安區/信義區 | 火鍋 | https://www.google.com/maps/search/?api=1&query=橘色涮涮屋+台北 | researching | 39/50 | Foodelicious, 米其林餐盤 | 火鍋界LV，二館包廂可容納 8-20 人 |
 | 青花驕麻辣鍋 | restaurant | 多區域 | 火鍋 | https://www.google.com/maps/search/?api=1&query=青花驕麻辣鍋+台北 | inbox | -/50 | Foodelicious, JJ.Hsu | 王品集團，適合大型聚餐，有包廂 |
-| 海底撈火鍋 | restaurant | 多區域 | 火鍋 | https://www.google.com/maps/search/?api=1&query=海底撈火鍋+台北 | researching | 41/50 | Tripadvisor, UpToGo | 京站店兩包廂可打通容納 20 人，服務極佳 |
+| 海底撈火鍋 | restaurant | 多區域 | 火鍋 | https://www.google.com/maps/search/?api=1&query=海底撈火鍋+台北 | rejected | 41/50 | Tripadvisor, UpToGo | 中國品牌，使用者不接受（已排除） |
 | Mosun Teppanyaki | restaurant | 大安區 | 鐵板燒 | https://www.google.com/maps/search/?api=1&query=Mosun+Teppanyaki+Taipei | inbox | -/50 | Tripadvisor | 鐵板燒，提供包廂與現場表演 |
 | Shang Palace @ Shangri-La | restaurant | 大安區 | 粵菜 | https://www.google.com/maps/search/?api=1&query=Shang+Palace+Shangri-La+Taipei | inbox | -/50 | Tripadvisor | 高級粵菜，多間包廂，港點精緻 |
 | Moonlight Cantonese @ Courtyard Taipei | restaurant | 南港區 | 粵菜 | https://www.google.com/maps/search/?api=1&query=Moonlight+Cantonese+Courtyard+Taipei | inbox | -/50 | Tripadvisor | 現代粵菜，有包廂，適合商務宴請 |
