@@ -48,6 +48,17 @@
 | Zaap | restaurant | 信義區 | 泰式料理 | https://www.google.com/maps/search/?api=1&query=Zaap+吳興街345巷6號 | inbox | -/50 | 米其林指南推薦 | 預約制泰式私廚，約24席，可包場適合20人 |
 | 雞窩餐廳 | restaurant | 信義區 | 台菜 | https://www.google.com/maps/search/?api=1&query=雞窩餐廳+和平東路三段377號 | inbox | -/50 | 愛食記 | 老字號砂鍋土雞湯，有包廂，適合5-10人（20人需併桌確認） |
 | 香米泰國料理 | restaurant | 多區域 | 泰式料理 | https://www.google.com/maps/search/?api=1&query=香米泰國料理+台北 | inbox | -/50 | THAI SELECT認證 | 多家分店，大直店有10人包廂兩間，可容納20人 |
+| 金蓬萊遵古台菜餐廳 | restaurant | 北投區 | 台菜 | https://www.google.com/maps/search/?api=1&query=金蓬萊遵古台菜餐廳+台北 | inbox | -/50 | 米其林一星 | 多次蟬聯米其林一星，北投酒家菜，大包廂 |
+| 十得私廚 | restaurant | 中山區 | 台菜 | https://www.google.com/maps/search/?api=1&query=十得私廚+台北 | inbox | -/50 | 台北包廂推薦 | 精緻閩南台菜，包廂10-40人，金牌脆皮雞 |
+| baan Taipei | restaurant | 多區域 | 泰式料理 | https://www.google.com/maps/search/?api=1&query=baan+Taipei | inbox | -/50 | 米其林推薦 | 曼谷米其林來台，8-20人專屬包廂 |
+| 教父牛排 | restaurant | 多區域 | 牛排 | https://www.google.com/maps/search/?api=1&query=教父牛排+台北 | inbox | -/50 | 頂級牛排 | 西式餐飲界知名，有大包廂 |
+| Oie餐酒館 | restaurant | 大安區 | 法式料理 | https://www.google.com/maps/search/?api=1&query=Oie餐酒館+台北 | inbox | -/50 | 包廂餐廳推薦 | 法式勃根地料理，包廂可打通 |
+| 寶船日本料理 | restaurant | 中正區 | 日本料理 | https://www.google.com/maps/search/?api=1&query=寶船日本料理+台北 | inbox | -/50 | 50年老字號 | 台北日料名店，多種包廂規劃 |
+| 魚貫鐵板燒 YUGUAN Omakase | restaurant | 中山區 | 鐵板燒 | https://www.google.com/maps/search/?api=1&query=魚貫鐵板燒+YUGUAN+Omakase+台北 | inbox | -/50 | 無菜單日式 | 無菜單日式鐵板燒，包廂10-20人 |
+| 兄弟大飯店 梅花廳 | restaurant | 松山區 | 港式飲茶 | https://www.google.com/maps/search/?api=1&query=兄弟大飯店+梅花廳 | inbox | -/50 | Google 4.1分 | 老牌飯店，推車港點，包廂大 |
+| 新葡苑 信義遠百A13店 | restaurant | 信義區 | 港式飲茶 | https://www.google.com/maps/search/?api=1&query=新葡苑+信義遠百A13 | inbox | -/50 | Google 4.1分 | 廣式點心與粵菜，推車港點吃到飽 |
+| 台北福華飯店 珍珠坊 | restaurant | 大安區 | 港式飲茶 | https://www.google.com/maps/search/?api=1&query=台北福華飯店+珍珠坊 | inbox | -/50 | 五星飯店 | 五星級服務，60道以上港點 |
+| 雅苑粵菜港式飲茶 | restaurant | 大安區 | 港式飲茶 | https://www.google.com/maps/search/?api=1&query=雅苑粵菜港式飲茶+台北 | inbox | -/50 | Google 4.0分 | 老字號港點名店，包廂數量足 |
 
 ---
 
