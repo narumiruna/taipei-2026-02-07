@@ -59,6 +59,7 @@
 | 新葡苑 信義遠百A13店 | restaurant | 信義區 | 港式飲茶 | https://www.google.com/maps/search/?api=1&query=新葡苑+信義遠百A13 | researching | -/50 | Google 4.1分 | 廣式點心與粵菜，推車港點吃到飽 |
 | 台北福華飯店 珍珠坊 | restaurant | 大安區 | 港式飲茶 | https://www.google.com/maps/search/?api=1&query=台北福華飯店+珍珠坊 | researching | -/50 | 五星飯店 | 五星級服務，60道以上港點 |
 | 雅苑粵菜港式飲茶 | restaurant | 大安區 | 港式飲茶 | https://www.google.com/maps/search/?api=1&query=雅苑粵菜港式飲茶+台北 | researching | -/50 | Google 4.0分 | 老字號港點名店，包廂數量足 |
+| 丰禾台味風格料理 | restaurant | 中山區 | 台菜 | https://www.google.com/maps/reserve/v/dine/c/v9yDJiOU1Sk | top | 40/50 | Google Maps, inline, 愛食記, 食尚玩家 | 王品集團台菜品牌，包廂10-12人（16-20人需兩桌） |
 
 ---
 
