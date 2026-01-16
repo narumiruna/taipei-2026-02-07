@@ -703,11 +703,7 @@ Stage 6: Completion    → Verify and document completion
 
 ### Source Quality Standards
 
-**URL requirements**:
-- Include actual URLs (not "see website")
-- Verify links are accessible
-- Note if behind paywall or login
-- Document access date for time-sensitive info
+**URL requirements**: Include actual URLs, verify accessible, note paywall/login, document access date
 
 **Citation format**:
 ```markdown
@@ -716,64 +712,31 @@ Stage 6: Completion    → Verify and document completion
 - Accessed: YYYY-MM-DD
 ```
 
-**Source reliability assessment**:
-- Prefer sources with large review counts (100+ reviews)
-- Cross-reference claims across 3+ sources
-- Flag sources that are outliers
-- Note if source is outdated (>2 years old)
+**Reliability**: Prefer 100+ reviews, cross-reference 3+ sources, flag outliers, note if >2 years old
 
 ### Conflict Handling
 
 **When sources disagree**:
 
-1. **Document the conflict explicitly**:
-   ```markdown
-   **Conflict noted**: 
-   - Source A claims: [X]
-   - Source B claims: [Y]
-   - Source C claims: [X]
-   ```
+1. **Document conflict explicitly**: Note all claims with sources
+2. **Resolution strategy**: Use majority consensus, recency, detail level, or review count/authority
+3. **When unresolvable**: Mark `unknown`/`conflicting`, document both sides, flag for review
 
-2. **Resolution strategy**:
-   - Majority consensus: Use most common finding
-   - Recency: Prefer more recent information
-   - Detail: Prefer source with more specific detail
-   - Scale: Weight by review count/authority
-
-3. **When unresolvable**:
-   - Mark as `unknown` or `conflicting`
-   - Document both sides
-   - Flag for human review
-   - Note in scoring rationale
-
-**Common conflict types**:
-- Hours of operation (check official website first)
-- Reservation requirements (call restaurant if critical)
-- Price ranges (use most recent, note inflation)
-- Service quality (look for trend over time)
+**Common conflicts**: Hours (check official site), reservations (call if critical), prices (use recent), service (look for trends)
 
 ### Uncertainty Documentation
 
-**Mark information as uncertain when**:
-- Only one source provides the information
-- Sources conflict without clear resolution
-- Information is outdated (>1 year for restaurants)
-- Seasonal variation possible
+**Mark uncertain when**: Single source only, unresolved conflict, outdated (>1 year), seasonal variation
 
-**Uncertainty labels**:
-- `unknown`: No reliable source found
-- `conflicting`: Sources disagree, no clear resolution
-- `unverified`: Single source only, not confirmed
-- `seasonal`: May vary by season (note which season)
-- `outdated`: Based on old information (note date)
+**Labels**: `unknown`, `conflicting`, `unverified`, `seasonal`, `outdated`
 
 **Example**:
 ```markdown
 **Practical**:
 - reservation requirement: required (per Tabelog, unverified on official site)
 - best visiting time: conflicting (some say lunch, some say dinner)
-- closed days: unknown (no clear information)
-- queue: 30-60 min (based on 2024 reviews, may be outdated)
+- closed days: unknown
+- queue: 30-60 min (2024 reviews, may be outdated)
 ```
 
 ### Seasonality Considerations
@@ -971,27 +934,12 @@ consistent reviews indicate reliable experience
 
 ### Scoring Consistency Rules
 
-**To maintain consistency across candidates**:
+**Maintain consistency**:
 
-1. **Score relative to category**:
-   - Compare restaurants within similar price bands or styles
-   - Don't penalize casual places for not being fine dining
-   - Adjust expectations by price band
-
-2. **Document edge cases**:
-   - Note when scoring difficult or borderline
-   - Flag for human review if uncertain
-   - Explain unusual scores in rationale
-
-3. **Avoid score inflation**:
-   - Not every place can be 40+
-   - Reserve 9-10 components for truly exceptional
-   - A score of 35-38 is still very good
-
-4. **Justify every component**:
-   - Every 0-10 score must cite specific evidence
-   - No scores without documented rationale
-   - Refer to evidence section in notes.md
+1. **Score relative to category**: Compare within price bands/styles; adjust expectations accordingly
+2. **Document edge cases**: Note difficult scoring; flag for review; explain unusual scores
+3. **Avoid inflation**: Reserve 9-10 for truly exceptional; 35-38 is very good
+4. **Justify components**: Cite specific evidence for every score; refer to notes.md
 
 ---
 
